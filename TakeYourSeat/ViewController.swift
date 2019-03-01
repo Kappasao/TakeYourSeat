@@ -18,12 +18,13 @@ class ViewController: UIViewController {
     
     //Guardamos el boton al que le da el usuario
     @IBAction func Option(_ sender: UIButton) {
-        if sender.tag == 0{
+        /*if sender.tag == 0{
             selectedOption = 0
         }
         if sender.tag == 1{
             selectedOption = 1
-        }
+        }*/
+        selectedOption = sender.tag
     }
     
     override func viewDidLoad() {
