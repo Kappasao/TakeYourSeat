@@ -17,6 +17,7 @@
 		5B82B979222867F400171078 /* TakeYourSeatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82B978222867F400171078 /* TakeYourSeatUITests.swift */; };
 		815A6038222995120007300B /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815A6037222995120007300B /* RestaurantCell.swift */; };
 		815A603A222995DA0007300B /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815A6039222995DA0007300B /* Restaurant.swift */; };
+		815A603C222999F80007300B /* RestaurantDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815A603B222999F80007300B /* RestaurantDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		5B82B97A222867F400171078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		815A6037222995120007300B /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
 		815A6039222995DA0007300B /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		815A603B222999F80007300B /* RestaurantDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				5B82B964222867F400171078 /* Info.plist */,
 				815A6037222995120007300B /* RestaurantCell.swift */,
 				815A6039222995DA0007300B /* Restaurant.swift */,
+				815A603B222999F80007300B /* RestaurantDetail.swift */,
 			);
 			path = TakeYourSeat;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				815A603A222995DA0007300B /* Restaurant.swift in Sources */,
 				815A6038222995120007300B /* RestaurantCell.swift in Sources */,
 				5B0636582229797F00F89273 /* TableViewSelection.swift in Sources */,
+				815A603C222999F80007300B /* RestaurantDetail.swift in Sources */,
 				5B82B95B222867F200171078 /* ViewController.swift in Sources */,
 				5B82B959222867F200171078 /* AppDelegate.swift in Sources */,
 			);

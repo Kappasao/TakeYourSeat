@@ -26,11 +26,11 @@ class tableViewSelection: UIViewController, UITableViewDelegate, UITableViewData
         if selectedOption == 0 {
             myCell.restaurantName.text = restComerAqui[indexPath.row].name
             myCell.restaurantLocation.text = restComerAqui[indexPath.row].location
-            myCell.restaurantImage.text = restComerAqui[indexPath.row].image
+            myCell.restaurantImage.image = restComerAqui[indexPath.row].image
         } else{
             myCell.restaurantName.text = restLlevar[indexPath.row].name
             myCell.restaurantLocation.text = restLlevar[indexPath.row].location
-            myCell.restaurantImage.text = restLlevar[indexPath.row].image
+            myCell.restaurantImage.image = restLlevar[indexPath.row].image
         }
         return myCell
     }
