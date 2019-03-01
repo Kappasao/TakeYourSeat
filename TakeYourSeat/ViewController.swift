@@ -8,13 +8,27 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+//Opcion seleccionada dependiendo del boton al que le damos
+var selectedOption = Int()
+//Opciones estaticas de momento para recoger si es para comer aqui o no
+var opciones = ["Aqui","Para llevar"]
 
+class ViewController: UIViewController {
+    //Aqui empezamos
+    
+    //Guardamos el boton al que le da el usuario
+    @IBAction func Option(_ sender: UIButton) {
+        if sender.tag == 0{
+            selectedOption = 0
+        }
+        if sender.tag == 1{
+            selectedOption = 1
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
-    //Aqui empezamos
-
+    
 }
-
