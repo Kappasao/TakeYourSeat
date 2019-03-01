@@ -15,6 +15,8 @@
 		5B82B963222867F400171078 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B82B961222867F400171078 /* LaunchScreen.storyboard */; };
 		5B82B96E222867F400171078 /* TakeYourSeatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82B96D222867F400171078 /* TakeYourSeatTests.swift */; };
 		5B82B979222867F400171078 /* TakeYourSeatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82B978222867F400171078 /* TakeYourSeatUITests.swift */; };
+		815A6038222995120007300B /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815A6037222995120007300B /* RestaurantCell.swift */; };
+		815A603A222995DA0007300B /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815A6039222995DA0007300B /* Restaurant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		5B82B974222867F400171078 /* TakeYourSeatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeYourSeatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B82B978222867F400171078 /* TakeYourSeatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeYourSeatUITests.swift; sourceTree = "<group>"; };
 		5B82B97A222867F400171078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		815A6037222995120007300B /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
+		815A6039222995DA0007300B /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				5B82B95F222867F400171078 /* Assets.xcassets */,
 				5B82B961222867F400171078 /* LaunchScreen.storyboard */,
 				5B82B964222867F400171078 /* Info.plist */,
+				815A6037222995120007300B /* RestaurantCell.swift */,
+				815A6039222995DA0007300B /* Restaurant.swift */,
 			);
 			path = TakeYourSeat;
 			sourceTree = "<group>";
@@ -262,6 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				815A603A222995DA0007300B /* Restaurant.swift in Sources */,
+				815A6038222995120007300B /* RestaurantCell.swift in Sources */,
 				5B0636582229797F00F89273 /* TableViewSelection.swift in Sources */,
 				5B82B95B222867F200171078 /* ViewController.swift in Sources */,
 				5B82B959222867F200171078 /* AppDelegate.swift in Sources */,
