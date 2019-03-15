@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0693E7FC4C19D5CDBEA1CBDB /* Pods_TakeYourSeatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC104E21F0AC9A168BBEB827 /* Pods_TakeYourSeatTests.framework */; };
+		0A56E32A71304537A40AEEAF /* Pods_TakeYourSeat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7257F052D9C3CD1F5CB8FB /* Pods_TakeYourSeat.framework */; };
 		5B0636582229797F00F89273 /* TableViewSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0636572229797F00F89273 /* TableViewSelection.swift */; };
+		5B6D7E45223BF109009F7540 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B6D7E44223BF109009F7540 /* GoogleService-Info.plist */; };
 		5B82B959222867F200171078 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82B958222867F200171078 /* AppDelegate.swift */; };
 		5B82B95B222867F200171078 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82B95A222867F200171078 /* ViewController.swift */; };
 		5B82B95E222867F200171078 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B82B95C222867F200171078 /* Main.storyboard */; };
@@ -18,6 +21,7 @@
 		815A6038222995120007300B /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815A6037222995120007300B /* RestaurantCell.swift */; };
 		815A603A222995DA0007300B /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815A6039222995DA0007300B /* Restaurant.swift */; };
 		815A603C222999F80007300B /* RestaurantDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815A603B222999F80007300B /* RestaurantDetail.swift */; };
+		E7BC34072CC9AA558B0A90D5 /* Pods_TakeYourSeatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6FA120B69298EFEF003B19F /* Pods_TakeYourSeatUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		368F0CFAD887AEB7F37400CD /* Pods-TakeYourSeatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeYourSeatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TakeYourSeatTests/Pods-TakeYourSeatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C2EF3F31310010CD0BD2E41 /* Pods-TakeYourSeatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeYourSeatUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TakeYourSeatUITests/Pods-TakeYourSeatUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5B0636572229797F00F89273 /* TableViewSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSelection.swift; sourceTree = "<group>"; };
+		5B6D7E44223BF109009F7540 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5B82B955222867F200171078 /* TakeYourSeat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeYourSeat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B82B958222867F200171078 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B82B95A222867F200171078 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,9 +59,16 @@
 		5B82B974222867F400171078 /* TakeYourSeatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeYourSeatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B82B978222867F400171078 /* TakeYourSeatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeYourSeatUITests.swift; sourceTree = "<group>"; };
 		5B82B97A222867F400171078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69E9E9C0ECCDEE75CA90CDC7 /* Pods-TakeYourSeatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeYourSeatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TakeYourSeatTests/Pods-TakeYourSeatTests.release.xcconfig"; sourceTree = "<group>"; };
 		815A6037222995120007300B /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
 		815A6039222995DA0007300B /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		815A603B222999F80007300B /* RestaurantDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetail.swift; sourceTree = "<group>"; };
+		BBFD2F23153410EE4295364C /* Pods-TakeYourSeat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeYourSeat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TakeYourSeat/Pods-TakeYourSeat.debug.xcconfig"; sourceTree = "<group>"; };
+		C3216A66A97E60CA1F035DAA /* Pods-TakeYourSeatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeYourSeatUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TakeYourSeatUITests/Pods-TakeYourSeatUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C3704A18920B784CA59B100D /* Pods-TakeYourSeat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeYourSeat.release.xcconfig"; path = "Pods/Target Support Files/Pods-TakeYourSeat/Pods-TakeYourSeat.release.xcconfig"; sourceTree = "<group>"; };
+		DC104E21F0AC9A168BBEB827 /* Pods_TakeYourSeatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakeYourSeatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6FA120B69298EFEF003B19F /* Pods_TakeYourSeatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakeYourSeatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA7257F052D9C3CD1F5CB8FB /* Pods_TakeYourSeat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakeYourSeat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A56E32A71304537A40AEEAF /* Pods_TakeYourSeat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0693E7FC4C19D5CDBEA1CBDB /* Pods_TakeYourSeatTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,12 +92,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7BC34072CC9AA558B0A90D5 /* Pods_TakeYourSeatUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F73B3123AC42173516A863C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA7257F052D9C3CD1F5CB8FB /* Pods_TakeYourSeat.framework */,
+				DC104E21F0AC9A168BBEB827 /* Pods_TakeYourSeatTests.framework */,
+				E6FA120B69298EFEF003B19F /* Pods_TakeYourSeatUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A079E215441C3AA6EB1A9DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BBFD2F23153410EE4295364C /* Pods-TakeYourSeat.debug.xcconfig */,
+				C3704A18920B784CA59B100D /* Pods-TakeYourSeat.release.xcconfig */,
+				368F0CFAD887AEB7F37400CD /* Pods-TakeYourSeatTests.debug.xcconfig */,
+				69E9E9C0ECCDEE75CA90CDC7 /* Pods-TakeYourSeatTests.release.xcconfig */,
+				C3216A66A97E60CA1F035DAA /* Pods-TakeYourSeatUITests.debug.xcconfig */,
+				4C2EF3F31310010CD0BD2E41 /* Pods-TakeYourSeatUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5B82B94C222867F200171078 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +129,8 @@
 				5B82B96C222867F400171078 /* TakeYourSeatTests */,
 				5B82B977222867F400171078 /* TakeYourSeatUITests */,
 				5B82B956222867F200171078 /* Products */,
+				1A079E215441C3AA6EB1A9DB /* Pods */,
+				0F73B3123AC42173516A863C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +157,7 @@
 				815A6037222995120007300B /* RestaurantCell.swift */,
 				815A6039222995DA0007300B /* Restaurant.swift */,
 				815A603B222999F80007300B /* RestaurantDetail.swift */,
+				5B6D7E44223BF109009F7540 /* GoogleService-Info.plist */,
 			);
 			path = TakeYourSeat;
 			sourceTree = "<group>";
@@ -144,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B82B97D222867F400171078 /* Build configuration list for PBXNativeTarget "TakeYourSeat" */;
 			buildPhases = (
+				3247E18C26C91FC20E27C1FE /* [CP] Check Pods Manifest.lock */,
 				5B82B951222867F200171078 /* Sources */,
 				5B82B952222867F200171078 /* Frameworks */,
 				5B82B953222867F200171078 /* Resources */,
+				DE7268A5ED5AE6855DD64BD8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,6 +206,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B82B980222867F400171078 /* Build configuration list for PBXNativeTarget "TakeYourSeatTests" */;
 			buildPhases = (
+				6CD9FA44E7A44DFE7E0C354C /* [CP] Check Pods Manifest.lock */,
 				5B82B965222867F400171078 /* Sources */,
 				5B82B966222867F400171078 /* Frameworks */,
 				5B82B967222867F400171078 /* Resources */,
@@ -179,6 +225,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B82B983222867F400171078 /* Build configuration list for PBXNativeTarget "TakeYourSeatUITests" */;
 			buildPhases = (
+				E9ACF88070422D1CFD9F0D23 /* [CP] Check Pods Manifest.lock */,
 				5B82B970222867F400171078 /* Sources */,
 				5B82B971222867F400171078 /* Frameworks */,
 				5B82B972222867F400171078 /* Resources */,
@@ -245,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B82B963222867F400171078 /* LaunchScreen.storyboard in Resources */,
+				5B6D7E45223BF109009F7540 /* GoogleService-Info.plist in Resources */,
 				5B82B960222867F400171078 /* Assets.xcassets in Resources */,
 				5B82B95E222867F200171078 /* Main.storyboard in Resources */,
 			);
@@ -265,6 +313,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3247E18C26C91FC20E27C1FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TakeYourSeat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CD9FA44E7A44DFE7E0C354C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TakeYourSeatTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE7268A5ED5AE6855DD64BD8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TakeYourSeat/Pods-TakeYourSeat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TakeYourSeat/Pods-TakeYourSeat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9ACF88070422D1CFD9F0D23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TakeYourSeatUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5B82B951222867F200171078 /* Sources */ = {
@@ -449,6 +590,7 @@
 		};
 		5B82B97E222867F400171078 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBFD2F23153410EE4295364C /* Pods-TakeYourSeat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +608,7 @@
 		};
 		5B82B97F222867F400171078 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3704A18920B784CA59B100D /* Pods-TakeYourSeat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -483,6 +626,7 @@
 		};
 		5B82B981222867F400171078 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 368F0CFAD887AEB7F37400CD /* Pods-TakeYourSeatTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -503,6 +647,7 @@
 		};
 		5B82B982222867F400171078 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69E9E9C0ECCDEE75CA90CDC7 /* Pods-TakeYourSeatTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -523,6 +668,7 @@
 		};
 		5B82B984222867F400171078 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3216A66A97E60CA1F035DAA /* Pods-TakeYourSeatUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -542,6 +688,7 @@
 		};
 		5B82B985222867F400171078 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C2EF3F31310010CD0BD2E41 /* Pods-TakeYourSeatUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
