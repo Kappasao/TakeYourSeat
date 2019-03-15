@@ -10,7 +10,7 @@
 		0693E7FC4C19D5CDBEA1CBDB /* Pods_TakeYourSeatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC104E21F0AC9A168BBEB827 /* Pods_TakeYourSeatTests.framework */; };
 		0A56E32A71304537A40AEEAF /* Pods_TakeYourSeat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7257F052D9C3CD1F5CB8FB /* Pods_TakeYourSeat.framework */; };
 		5B0636582229797F00F89273 /* TableViewSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0636572229797F00F89273 /* TableViewSelection.swift */; };
-		5B6D7E45223BF109009F7540 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B6D7E44223BF109009F7540 /* GoogleService-Info.plist */; };
+		5B5501EA223C10AC00D194E5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B5501E9223C10AC00D194E5 /* GoogleService-Info.plist */; };
 		5B82B959222867F200171078 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82B958222867F200171078 /* AppDelegate.swift */; };
 		5B82B95B222867F200171078 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82B95A222867F200171078 /* ViewController.swift */; };
 		5B82B95E222867F200171078 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B82B95C222867F200171078 /* Main.storyboard */; };
@@ -45,7 +45,7 @@
 		368F0CFAD887AEB7F37400CD /* Pods-TakeYourSeatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeYourSeatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TakeYourSeatTests/Pods-TakeYourSeatTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4C2EF3F31310010CD0BD2E41 /* Pods-TakeYourSeatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeYourSeatUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TakeYourSeatUITests/Pods-TakeYourSeatUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5B0636572229797F00F89273 /* TableViewSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSelection.swift; sourceTree = "<group>"; };
-		5B6D7E44223BF109009F7540 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5B5501E9223C10AC00D194E5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5B82B955222867F200171078 /* TakeYourSeat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeYourSeat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B82B958222867F200171078 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B82B95A222867F200171078 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -157,7 +157,7 @@
 				815A6037222995120007300B /* RestaurantCell.swift */,
 				815A6039222995DA0007300B /* Restaurant.swift */,
 				815A603B222999F80007300B /* RestaurantDetail.swift */,
-				5B6D7E44223BF109009F7540 /* GoogleService-Info.plist */,
+				5B5501E9223C10AC00D194E5 /* GoogleService-Info.plist */,
 			);
 			path = TakeYourSeat;
 			sourceTree = "<group>";
@@ -192,6 +192,7 @@
 				5B82B952222867F200171078 /* Frameworks */,
 				5B82B953222867F200171078 /* Resources */,
 				DE7268A5ED5AE6855DD64BD8 /* [CP] Embed Pods Frameworks */,
+				4479DA82D63CCA066B362BC9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -292,7 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B82B963222867F400171078 /* LaunchScreen.storyboard in Resources */,
-				5B6D7E45223BF109009F7540 /* GoogleService-Info.plist in Resources */,
+				5B5501EA223C10AC00D194E5 /* GoogleService-Info.plist in Resources */,
 				5B82B960222867F400171078 /* Assets.xcassets in Resources */,
 				5B82B95E222867F200171078 /* Main.storyboard in Resources */,
 			);
@@ -337,6 +338,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4479DA82D63CCA066B362BC9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TakeYourSeat/Pods-TakeYourSeat-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TakeYourSeat/Pods-TakeYourSeat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6CD9FA44E7A44DFE7E0C354C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -368,6 +391,8 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TakeYourSeat/Pods-TakeYourSeat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -375,6 +400,8 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -526,6 +553,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
+				NEW_SETTING = "";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -581,6 +609,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				NEW_SETTING = "";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GoogleSignIn
 
 //Opcion seleccionada dependiendo del boton al que le damos
 var selectedOption = Int()
@@ -22,8 +23,12 @@ var restLlevar:[Restaurant] = [Restaurant(name: "Llevar 1", image: UIImage(named
 ]
 
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, GIDSignInUIDelegate {
     //Aqui empezamos
+    
+    @IBOutlet weak var singIn: UIButton!
+    @IBOutlet weak var signInButton: GIDSignInButton!
+    
     
     //Guardamos el boton al que le da el usuario
     @IBAction func Option(_ sender: UIButton) {
@@ -36,8 +41,21 @@ class ViewController: UIViewController {
         selectedOption = sender.tag
     }
     
+    
+    func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!,
+                withError error: NSError!) {
+        if (error == nil) {
+            // Perform any operations on signed in user here.
+            // ...
+            print("log")
+        } else {
+            print("\(error.localizedDescription)")
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        GIDSignIn.sharedInstance().uiDelegate = self
     }
     
 }
