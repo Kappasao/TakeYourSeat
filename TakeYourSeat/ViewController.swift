@@ -40,6 +40,7 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
         }*/
         selectedOption = sender.tag
         print("a")
+        print ("b")
     }
     
     
