@@ -11,13 +11,13 @@
 		0A56E32A71304537A40AEEAF /* Pods_TakeYourSeat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7257F052D9C3CD1F5CB8FB /* Pods_TakeYourSeat.framework */; };
 		5B043C2F22452B4700FDD0D3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B043C2E22452B4700FDD0D3 /* GoogleService-Info.plist */; };
 		5B043C3122453B1B00FDD0D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B043C3022453B1B00FDD0D3 /* Main.storyboard */; };
-		5B0636582229797F00F89273 /* TableViewSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0636572229797F00F89273 /* TableViewSelection.swift */; };
 		5B82B959222867F200171078 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82B958222867F200171078 /* AppDelegate.swift */; };
 		5B82B95B222867F200171078 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82B95A222867F200171078 /* ViewController.swift */; };
 		5B82B960222867F400171078 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B82B95F222867F400171078 /* Assets.xcassets */; };
 		5B82B963222867F400171078 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B82B961222867F400171078 /* LaunchScreen.storyboard */; };
 		5B82B96E222867F400171078 /* TakeYourSeatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82B96D222867F400171078 /* TakeYourSeatTests.swift */; };
 		5B82B979222867F400171078 /* TakeYourSeatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82B978222867F400171078 /* TakeYourSeatUITests.swift */; };
+		814910FD2245402E007BBC4D /* TableViewRestaurantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814910FC2245402E007BBC4D /* TableViewRestaurantes.swift */; };
 		815A6038222995120007300B /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815A6037222995120007300B /* RestaurantCell.swift */; };
 		815A603A222995DA0007300B /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815A6039222995DA0007300B /* Restaurant.swift */; };
 		815A603C222999F80007300B /* RestaurantDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815A603B222999F80007300B /* RestaurantDetail.swift */; };
@@ -46,7 +46,6 @@
 		4C2EF3F31310010CD0BD2E41 /* Pods-TakeYourSeatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeYourSeatUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TakeYourSeatUITests/Pods-TakeYourSeatUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5B043C2E22452B4700FDD0D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5B043C3022453B1B00FDD0D3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		5B0636572229797F00F89273 /* TableViewSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSelection.swift; sourceTree = "<group>"; };
 		5B82B955222867F200171078 /* TakeYourSeat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeYourSeat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B82B958222867F200171078 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B82B95A222867F200171078 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +59,7 @@
 		5B82B978222867F400171078 /* TakeYourSeatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeYourSeatUITests.swift; sourceTree = "<group>"; };
 		5B82B97A222867F400171078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69E9E9C0ECCDEE75CA90CDC7 /* Pods-TakeYourSeatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeYourSeatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TakeYourSeatTests/Pods-TakeYourSeatTests.release.xcconfig"; sourceTree = "<group>"; };
+		814910FC2245402E007BBC4D /* TableViewRestaurantes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewRestaurantes.swift; sourceTree = "<group>"; };
 		815A6037222995120007300B /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
 		815A6039222995DA0007300B /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		815A603B222999F80007300B /* RestaurantDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetail.swift; sourceTree = "<group>"; };
@@ -151,13 +151,13 @@
 				5B82B958222867F200171078 /* AppDelegate.swift */,
 				5B82B95A222867F200171078 /* ViewController.swift */,
 				5B043C3022453B1B00FDD0D3 /* Main.storyboard */,
-				5B0636572229797F00F89273 /* TableViewSelection.swift */,
 				5B82B95F222867F400171078 /* Assets.xcassets */,
 				5B82B961222867F400171078 /* LaunchScreen.storyboard */,
 				5B82B964222867F400171078 /* Info.plist */,
 				815A6037222995120007300B /* RestaurantCell.swift */,
 				815A6039222995DA0007300B /* Restaurant.swift */,
 				815A603B222999F80007300B /* RestaurantDetail.swift */,
+				814910FC2245402E007BBC4D /* TableViewRestaurantes.swift */,
 			);
 			path = TakeYourSeat;
 			sourceTree = "<group>";
@@ -441,9 +441,9 @@
 			files = (
 				815A603A222995DA0007300B /* Restaurant.swift in Sources */,
 				815A6038222995120007300B /* RestaurantCell.swift in Sources */,
-				5B0636582229797F00F89273 /* TableViewSelection.swift in Sources */,
 				815A603C222999F80007300B /* RestaurantDetail.swift in Sources */,
 				5B82B95B222867F200171078 /* ViewController.swift in Sources */,
+				814910FD2245402E007BBC4D /* TableViewRestaurantes.swift in Sources */,
 				5B82B959222867F200171078 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

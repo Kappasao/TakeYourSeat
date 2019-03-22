@@ -10,9 +10,19 @@ import UIKit
 
 class RestaurantDetail: UIViewController {
 
+    @IBOutlet weak var restName: UILabel!
+    @IBOutlet weak var restImg: UIImageView!
+    @IBOutlet weak var restDesc: UILabel!
+    
+    var nombre = ""
+    var desc = ""
+    var img:UIImage = UIImage()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        restName.text = nombre
+        restImg.image = img
+        restDesc.text = desc
         // Do any additional setup after loading the view.
     }
 
