@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Selection-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TakeYourSeat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="Selection" customModule="TakeYourSeat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,7 +24,7 @@
                                 <accessibility key="accessibilityConfiguration" identifier="1"/>
                                 <state key="normal" title="En el restaurante"/>
                                 <connections>
-                                    <action selector="Option:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zge-tV-foI"/>
+                                    <action selector="Option:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7HO-ZE-MsN"/>
                                     <segue destination="tZj-0s-7Vf" kind="show" id="w62-rz-mMa"/>
                                 </connections>
                             </button>
@@ -34,7 +34,7 @@
                                 <accessibility key="accessibilityConfiguration" identifier="2"/>
                                 <state key="normal" title="Para Llevar"/>
                                 <connections>
-                                    <action selector="Option:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0RP-Xe-Z7h"/>
+                                    <action selector="Option:" destination="BYZ-38-t0r" eventType="touchUpInside" id="snP-aR-aQj"/>
                                     <segue destination="M56-nF-0xU" kind="show" id="7Au-ky-Vtf"/>
                                 </connections>
                             </button>
@@ -50,9 +50,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="eWK-9h-eZK"/>
-                    <connections>
-                        <outlet property="signInButton" destination="Zsq-Bc-4dL" id="Tmv-CS-jVD"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -308,12 +305,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Pc-Ge-D7f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="318" y="-582"/>
+            <point key="canvasLocation" x="317.60000000000002" y="-582.45877061469275"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1Tg-3e-rJx">
             <objects>
-                <viewController id="4NV-Vk-j15" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="asd" id="4NV-Vk-j15" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bZJ-rc-f3d">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
