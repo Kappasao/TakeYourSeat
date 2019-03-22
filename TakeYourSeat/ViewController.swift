@@ -44,7 +44,7 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
     }
     
     
-    func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!,
+    /*func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!,
                 withError error: NSError!) {
         if (error == nil) {
             // Perform any operations on signed in user here.
@@ -53,7 +53,7 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
         } else {
             print("\(error.localizedDescription)")
         }
-    }
+    }*/
     
     override func viewDidLoad() {
         super.viewDidLoad()
