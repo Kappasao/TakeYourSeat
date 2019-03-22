@@ -1,772 +1,779 @@
 // !$*UTF8*$!
 {
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 50;
-	objects = {
+    archiveVersion = 1;
+    classes = {
+    };
+    objectVersion = 50;
+    objects = {
 
 /* Begin PBXBuildFile section */
-		0693E7FC4C19D5CDBEA1CBDB /* Pods_TakeYourSeatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC104E21F0AC9A168BBEB827 /* Pods_TakeYourSeatTests.framework */; };
-		0A56E32A71304537A40AEEAF /* Pods_TakeYourSeat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7257F052D9C3CD1F5CB8FB /* Pods_TakeYourSeat.framework */; };
-		5B043C2F22452B4700FDD0D3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B043C2E22452B4700FDD0D3 /* GoogleService-Info.plist */; };
-		5B043C3122453B1B00FDD0D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B043C3022453B1B00FDD0D3 /* Main.storyboard */; };
-		5B82B959222867F200171078 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82B958222867F200171078 /* AppDelegate.swift */; };
-		5B82B95B222867F200171078 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82B95A222867F200171078 /* ViewController.swift */; };
-		5B82B960222867F400171078 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B82B95F222867F400171078 /* Assets.xcassets */; };
-		5B82B963222867F400171078 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B82B961222867F400171078 /* LaunchScreen.storyboard */; };
-		5B82B96E222867F400171078 /* TakeYourSeatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82B96D222867F400171078 /* TakeYourSeatTests.swift */; };
-		5B82B979222867F400171078 /* TakeYourSeatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82B978222867F400171078 /* TakeYourSeatUITests.swift */; };
-		814910FD2245402E007BBC4D /* TableViewRestaurantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814910FC2245402E007BBC4D /* TableViewRestaurantes.swift */; };
-		815A6038222995120007300B /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815A6037222995120007300B /* RestaurantCell.swift */; };
-		815A603A222995DA0007300B /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815A6039222995DA0007300B /* Restaurant.swift */; };
-		815A603C222999F80007300B /* RestaurantDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815A603B222999F80007300B /* RestaurantDetail.swift */; };
-		E7BC34072CC9AA558B0A90D5 /* Pods_TakeYourSeatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6FA120B69298EFEF003B19F /* Pods_TakeYourSeatUITests.framework */; };
+        0693E7FC4C19D5CDBEA1CBDB /* Pods_TakeYourSeatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC104E21F0AC9A168BBEB827 /* Pods_TakeYourSeatTests.framework */; };
+        0A56E32A71304537A40AEEAF /* Pods_TakeYourSeat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7257F052D9C3CD1F5CB8FB /* Pods_TakeYourSeat.framework */; };
+        5B043C2F22452B4700FDD0D3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B043C2E22452B4700FDD0D3 /* GoogleService-Info.plist */; };
+        5B043C3122453B1B00FDD0D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B043C3022453B1B00FDD0D3 /* Main.storyboard */; };
+        5B043C33224543AB00FDD0D3 /* Selection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B043C32224543AB00FDD0D3 /* Selection.swift */; };
+        5B0636582229797F00F89273 /* TableViewSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0636572229797F00F89273 /* TableViewSelection.swift */; };
+        5B82B959222867F200171078 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82B958222867F200171078 /* AppDelegate.swift */; };
+        5B82B95B222867F200171078 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82B95A222867F200171078 /* ViewController.swift */; };
+        5B82B960222867F400171078 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B82B95F222867F400171078 /* Assets.xcassets */; };
+        5B82B963222867F400171078 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B82B961222867F400171078 /* LaunchScreen.storyboard */; };
+        5B82B96E222867F400171078 /* TakeYourSeatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82B96D222867F400171078 /* TakeYourSeatTests.swift */; };
+        5B82B979222867F400171078 /* TakeYourSeatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82B978222867F400171078 /* TakeYourSeatUITests.swift */; };
+        814910FD2245402E007BBC4D /* TableViewRestaurantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814910FC2245402E007BBC4D /* TableViewRestaurantes.swift */; };
+        815A6038222995120007300B /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815A6037222995120007300B /* RestaurantCell.swift */; };
+        815A603A222995DA0007300B /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815A6039222995DA0007300B /* Restaurant.swift */; };
+        815A603C222999F80007300B /* RestaurantDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815A603B222999F80007300B /* RestaurantDetail.swift */; };
+        E7BC34072CC9AA558B0A90D5 /* Pods_TakeYourSeatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6FA120B69298EFEF003B19F /* Pods_TakeYourSeatUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5B82B96A222867F400171078 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5B82B94D222867F200171078 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5B82B954222867F200171078;
-			remoteInfo = TakeYourSeat;
-		};
-		5B82B975222867F400171078 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5B82B94D222867F200171078 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5B82B954222867F200171078;
-			remoteInfo = TakeYourSeat;
-		};
+        5B82B96A222867F400171078 /* PBXContainerItemProxy */ = {
+            isa = PBXContainerItemProxy;
+            containerPortal = 5B82B94D222867F200171078 /* Project object */;
+            proxyType = 1;
+            remoteGlobalIDString = 5B82B954222867F200171078;
+            remoteInfo = TakeYourSeat;
+        };
+        5B82B975222867F400171078 /* PBXContainerItemProxy */ = {
+            isa = PBXContainerItemProxy;
+            containerPortal = 5B82B94D222867F200171078 /* Project object */;
+            proxyType = 1;
+            remoteGlobalIDString = 5B82B954222867F200171078;
+            remoteInfo = TakeYourSeat;
+        };
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		368F0CFAD887AEB7F37400CD /* Pods-TakeYourSeatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeYourSeatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TakeYourSeatTests/Pods-TakeYourSeatTests.debug.xcconfig"; sourceTree = "<group>"; };
-		4C2EF3F31310010CD0BD2E41 /* Pods-TakeYourSeatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeYourSeatUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TakeYourSeatUITests/Pods-TakeYourSeatUITests.release.xcconfig"; sourceTree = "<group>"; };
-		5B043C2E22452B4700FDD0D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		5B043C3022453B1B00FDD0D3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		5B82B955222867F200171078 /* TakeYourSeat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeYourSeat.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B82B958222867F200171078 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5B82B95A222867F200171078 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5B82B95F222867F400171078 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5B82B962222867F400171078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5B82B964222867F400171078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B82B969222867F400171078 /* TakeYourSeatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeYourSeatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B82B96D222867F400171078 /* TakeYourSeatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeYourSeatTests.swift; sourceTree = "<group>"; };
-		5B82B96F222867F400171078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B82B974222867F400171078 /* TakeYourSeatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeYourSeatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B82B978222867F400171078 /* TakeYourSeatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeYourSeatUITests.swift; sourceTree = "<group>"; };
-		5B82B97A222867F400171078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		69E9E9C0ECCDEE75CA90CDC7 /* Pods-TakeYourSeatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeYourSeatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TakeYourSeatTests/Pods-TakeYourSeatTests.release.xcconfig"; sourceTree = "<group>"; };
-		814910FC2245402E007BBC4D /* TableViewRestaurantes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewRestaurantes.swift; sourceTree = "<group>"; };
-		815A6037222995120007300B /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
-		815A6039222995DA0007300B /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
-		815A603B222999F80007300B /* RestaurantDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetail.swift; sourceTree = "<group>"; };
-		BBFD2F23153410EE4295364C /* Pods-TakeYourSeat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeYourSeat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TakeYourSeat/Pods-TakeYourSeat.debug.xcconfig"; sourceTree = "<group>"; };
-		C3216A66A97E60CA1F035DAA /* Pods-TakeYourSeatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeYourSeatUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TakeYourSeatUITests/Pods-TakeYourSeatUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		C3704A18920B784CA59B100D /* Pods-TakeYourSeat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeYourSeat.release.xcconfig"; path = "Pods/Target Support Files/Pods-TakeYourSeat/Pods-TakeYourSeat.release.xcconfig"; sourceTree = "<group>"; };
-		DC104E21F0AC9A168BBEB827 /* Pods_TakeYourSeatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakeYourSeatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6FA120B69298EFEF003B19F /* Pods_TakeYourSeatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakeYourSeatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA7257F052D9C3CD1F5CB8FB /* Pods_TakeYourSeat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakeYourSeat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+        368F0CFAD887AEB7F37400CD /* Pods-TakeYourSeatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeYourSeatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TakeYourSeatTests/Pods-TakeYourSeatTests.debug.xcconfig"; sourceTree = "<group>"; };
+        4C2EF3F31310010CD0BD2E41 /* Pods-TakeYourSeatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeYourSeatUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TakeYourSeatUITests/Pods-TakeYourSeatUITests.release.xcconfig"; sourceTree = "<group>"; };
+        5B043C2E22452B4700FDD0D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+        5B043C3022453B1B00FDD0D3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+        5B043C32224543AB00FDD0D3 /* Selection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selection.swift; sourceTree = "<group>"; };
+        5B0636572229797F00F89273 /* TableViewSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSelection.swift; sourceTree = "<group>"; };
+        5B82B955222867F200171078 /* TakeYourSeat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeYourSeat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+        5B82B958222867F200171078 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+        5B82B95A222867F200171078 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+        5B82B95F222867F400171078 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+        5B82B962222867F400171078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+        5B82B964222867F400171078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        5B82B969222867F400171078 /* TakeYourSeatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeYourSeatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+        5B82B96D222867F400171078 /* TakeYourSeatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeYourSeatTests.swift; sourceTree = "<group>"; };
+        5B82B96F222867F400171078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        5B82B974222867F400171078 /* TakeYourSeatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeYourSeatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+        5B82B978222867F400171078 /* TakeYourSeatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeYourSeatUITests.swift; sourceTree = "<group>"; };
+        5B82B97A222867F400171078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        69E9E9C0ECCDEE75CA90CDC7 /* Pods-TakeYourSeatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeYourSeatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TakeYourSeatTests/Pods-TakeYourSeatTests.release.xcconfig"; sourceTree = "<group>"; };
+        814910FC2245402E007BBC4D /* TableViewRestaurantes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewRestaurantes.swift; sourceTree = "<group>"; };
+        815A6037222995120007300B /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
+        815A6039222995DA0007300B /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+        815A603B222999F80007300B /* RestaurantDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetail.swift; sourceTree = "<group>"; };
+        BBFD2F23153410EE4295364C /* Pods-TakeYourSeat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeYourSeat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TakeYourSeat/Pods-TakeYourSeat.debug.xcconfig"; sourceTree = "<group>"; };
+        C3216A66A97E60CA1F035DAA /* Pods-TakeYourSeatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeYourSeatUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TakeYourSeatUITests/Pods-TakeYourSeatUITests.debug.xcconfig"; sourceTree = "<group>"; };
+        C3704A18920B784CA59B100D /* Pods-TakeYourSeat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeYourSeat.release.xcconfig"; path = "Pods/Target Support Files/Pods-TakeYourSeat/Pods-TakeYourSeat.release.xcconfig"; sourceTree = "<group>"; };
+        DC104E21F0AC9A168BBEB827 /* Pods_TakeYourSeatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakeYourSeatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+        E6FA120B69298EFEF003B19F /* Pods_TakeYourSeatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakeYourSeatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+        FA7257F052D9C3CD1F5CB8FB /* Pods_TakeYourSeat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakeYourSeat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5B82B952222867F200171078 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0A56E32A71304537A40AEEAF /* Pods_TakeYourSeat.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B82B966222867F400171078 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0693E7FC4C19D5CDBEA1CBDB /* Pods_TakeYourSeatTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B82B971222867F400171078 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E7BC34072CC9AA558B0A90D5 /* Pods_TakeYourSeatUITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        5B82B952222867F200171078 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                0A56E32A71304537A40AEEAF /* Pods_TakeYourSeat.framework in Frameworks */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        5B82B966222867F400171078 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                0693E7FC4C19D5CDBEA1CBDB /* Pods_TakeYourSeatTests.framework in Frameworks */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        5B82B971222867F400171078 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                E7BC34072CC9AA558B0A90D5 /* Pods_TakeYourSeatUITests.framework in Frameworks */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0F73B3123AC42173516A863C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FA7257F052D9C3CD1F5CB8FB /* Pods_TakeYourSeat.framework */,
-				DC104E21F0AC9A168BBEB827 /* Pods_TakeYourSeatTests.framework */,
-				E6FA120B69298EFEF003B19F /* Pods_TakeYourSeatUITests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1A079E215441C3AA6EB1A9DB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BBFD2F23153410EE4295364C /* Pods-TakeYourSeat.debug.xcconfig */,
-				C3704A18920B784CA59B100D /* Pods-TakeYourSeat.release.xcconfig */,
-				368F0CFAD887AEB7F37400CD /* Pods-TakeYourSeatTests.debug.xcconfig */,
-				69E9E9C0ECCDEE75CA90CDC7 /* Pods-TakeYourSeatTests.release.xcconfig */,
-				C3216A66A97E60CA1F035DAA /* Pods-TakeYourSeatUITests.debug.xcconfig */,
-				4C2EF3F31310010CD0BD2E41 /* Pods-TakeYourSeatUITests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		5B82B94C222867F200171078 = {
-			isa = PBXGroup;
-			children = (
-				5B82B957222867F200171078 /* TakeYourSeat */,
-				5B82B96C222867F400171078 /* TakeYourSeatTests */,
-				5B82B977222867F400171078 /* TakeYourSeatUITests */,
-				5B82B956222867F200171078 /* Products */,
-				1A079E215441C3AA6EB1A9DB /* Pods */,
-				0F73B3123AC42173516A863C /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		5B82B956222867F200171078 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5B82B955222867F200171078 /* TakeYourSeat.app */,
-				5B82B969222867F400171078 /* TakeYourSeatTests.xctest */,
-				5B82B974222867F400171078 /* TakeYourSeatUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		5B82B957222867F200171078 /* TakeYourSeat */ = {
-			isa = PBXGroup;
-			children = (
-				5B043C2E22452B4700FDD0D3 /* GoogleService-Info.plist */,
-				5B82B958222867F200171078 /* AppDelegate.swift */,
-				5B82B95A222867F200171078 /* ViewController.swift */,
-				5B043C3022453B1B00FDD0D3 /* Main.storyboard */,
-				5B82B95F222867F400171078 /* Assets.xcassets */,
-				5B82B961222867F400171078 /* LaunchScreen.storyboard */,
-				5B82B964222867F400171078 /* Info.plist */,
-				815A6037222995120007300B /* RestaurantCell.swift */,
-				815A6039222995DA0007300B /* Restaurant.swift */,
-				815A603B222999F80007300B /* RestaurantDetail.swift */,
-				814910FC2245402E007BBC4D /* TableViewRestaurantes.swift */,
-			);
-			path = TakeYourSeat;
-			sourceTree = "<group>";
-		};
-		5B82B96C222867F400171078 /* TakeYourSeatTests */ = {
-			isa = PBXGroup;
-			children = (
-				5B82B96D222867F400171078 /* TakeYourSeatTests.swift */,
-				5B82B96F222867F400171078 /* Info.plist */,
-			);
-			path = TakeYourSeatTests;
-			sourceTree = "<group>";
-		};
-		5B82B977222867F400171078 /* TakeYourSeatUITests */ = {
-			isa = PBXGroup;
-			children = (
-				5B82B978222867F400171078 /* TakeYourSeatUITests.swift */,
-				5B82B97A222867F400171078 /* Info.plist */,
-			);
-			path = TakeYourSeatUITests;
-			sourceTree = "<group>";
-		};
+        0F73B3123AC42173516A863C /* Frameworks */ = {
+            isa = PBXGroup;
+            children = (
+                FA7257F052D9C3CD1F5CB8FB /* Pods_TakeYourSeat.framework */,
+                DC104E21F0AC9A168BBEB827 /* Pods_TakeYourSeatTests.framework */,
+                E6FA120B69298EFEF003B19F /* Pods_TakeYourSeatUITests.framework */,
+            );
+            name = Frameworks;
+            sourceTree = "<group>";
+        };
+        1A079E215441C3AA6EB1A9DB /* Pods */ = {
+            isa = PBXGroup;
+            children = (
+                BBFD2F23153410EE4295364C /* Pods-TakeYourSeat.debug.xcconfig */,
+                C3704A18920B784CA59B100D /* Pods-TakeYourSeat.release.xcconfig */,
+                368F0CFAD887AEB7F37400CD /* Pods-TakeYourSeatTests.debug.xcconfig */,
+                69E9E9C0ECCDEE75CA90CDC7 /* Pods-TakeYourSeatTests.release.xcconfig */,
+                C3216A66A97E60CA1F035DAA /* Pods-TakeYourSeatUITests.debug.xcconfig */,
+                4C2EF3F31310010CD0BD2E41 /* Pods-TakeYourSeatUITests.release.xcconfig */,
+            );
+            name = Pods;
+            sourceTree = "<group>";
+        };
+        5B82B94C222867F200171078 = {
+            isa = PBXGroup;
+            children = (
+                5B82B957222867F200171078 /* TakeYourSeat */,
+                5B82B96C222867F400171078 /* TakeYourSeatTests */,
+                5B82B977222867F400171078 /* TakeYourSeatUITests */,
+                5B82B956222867F200171078 /* Products */,
+                1A079E215441C3AA6EB1A9DB /* Pods */,
+                0F73B3123AC42173516A863C /* Frameworks */,
+            );
+            sourceTree = "<group>";
+        };
+        5B82B956222867F200171078 /* Products */ = {
+            isa = PBXGroup;
+            children = (
+                5B82B955222867F200171078 /* TakeYourSeat.app */,
+                5B82B969222867F400171078 /* TakeYourSeatTests.xctest */,
+                5B82B974222867F400171078 /* TakeYourSeatUITests.xctest */,
+            );
+            name = Products;
+            sourceTree = "<group>";
+        };
+        5B82B957222867F200171078 /* TakeYourSeat */ = {
+            isa = PBXGroup;
+            children = (
+                5B043C2E22452B4700FDD0D3 /* GoogleService-Info.plist */,
+                5B82B958222867F200171078 /* AppDelegate.swift */,
+                5B82B95A222867F200171078 /* ViewController.swift */,
+                5B043C3022453B1B00FDD0D3 /* Main.storyboard */,
+                5B043C32224543AB00FDD0D3 /* Selection.swift */,
+                5B0636572229797F00F89273 /* TableViewSelection.swift */,
+                5B82B95F222867F400171078 /* Assets.xcassets */,
+                5B82B961222867F400171078 /* LaunchScreen.storyboard */,
+                5B82B964222867F400171078 /* Info.plist */,
+                815A6037222995120007300B /* RestaurantCell.swift */,
+                815A6039222995DA0007300B /* Restaurant.swift */,
+                815A603B222999F80007300B /* RestaurantDetail.swift */,
+                814910FC2245402E007BBC4D /* TableViewRestaurantes.swift */,
+            );
+            path = TakeYourSeat;
+            sourceTree = "<group>";
+        };
+        5B82B96C222867F400171078 /* TakeYourSeatTests */ = {
+            isa = PBXGroup;
+            children = (
+                5B82B96D222867F400171078 /* TakeYourSeatTests.swift */,
+                5B82B96F222867F400171078 /* Info.plist */,
+            );
+            path = TakeYourSeatTests;
+            sourceTree = "<group>";
+        };
+        5B82B977222867F400171078 /* TakeYourSeatUITests */ = {
+            isa = PBXGroup;
+            children = (
+                5B82B978222867F400171078 /* TakeYourSeatUITests.swift */,
+                5B82B97A222867F400171078 /* Info.plist */,
+            );
+            path = TakeYourSeatUITests;
+            sourceTree = "<group>";
+        };
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5B82B954222867F200171078 /* TakeYourSeat */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5B82B97D222867F400171078 /* Build configuration list for PBXNativeTarget "TakeYourSeat" */;
-			buildPhases = (
-				3247E18C26C91FC20E27C1FE /* [CP] Check Pods Manifest.lock */,
-				5B82B951222867F200171078 /* Sources */,
-				5B82B952222867F200171078 /* Frameworks */,
-				5B82B953222867F200171078 /* Resources */,
-				DE7268A5ED5AE6855DD64BD8 /* [CP] Embed Pods Frameworks */,
-				4479DA82D63CCA066B362BC9 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = TakeYourSeat;
-			productName = TakeYourSeat;
-			productReference = 5B82B955222867F200171078 /* TakeYourSeat.app */;
-			productType = "com.apple.product-type.application";
-		};
-		5B82B968222867F400171078 /* TakeYourSeatTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5B82B980222867F400171078 /* Build configuration list for PBXNativeTarget "TakeYourSeatTests" */;
-			buildPhases = (
-				6CD9FA44E7A44DFE7E0C354C /* [CP] Check Pods Manifest.lock */,
-				5B82B965222867F400171078 /* Sources */,
-				5B82B966222867F400171078 /* Frameworks */,
-				5B82B967222867F400171078 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5B82B96B222867F400171078 /* PBXTargetDependency */,
-			);
-			name = TakeYourSeatTests;
-			productName = TakeYourSeatTests;
-			productReference = 5B82B969222867F400171078 /* TakeYourSeatTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		5B82B973222867F400171078 /* TakeYourSeatUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5B82B983222867F400171078 /* Build configuration list for PBXNativeTarget "TakeYourSeatUITests" */;
-			buildPhases = (
-				E9ACF88070422D1CFD9F0D23 /* [CP] Check Pods Manifest.lock */,
-				5B82B970222867F400171078 /* Sources */,
-				5B82B971222867F400171078 /* Frameworks */,
-				5B82B972222867F400171078 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5B82B976222867F400171078 /* PBXTargetDependency */,
-			);
-			name = TakeYourSeatUITests;
-			productName = TakeYourSeatUITests;
-			productReference = 5B82B974222867F400171078 /* TakeYourSeatUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
+        5B82B954222867F200171078 /* TakeYourSeat */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 5B82B97D222867F400171078 /* Build configuration list for PBXNativeTarget "TakeYourSeat" */;
+            buildPhases = (
+                3247E18C26C91FC20E27C1FE /* [CP] Check Pods Manifest.lock */,
+                5B82B951222867F200171078 /* Sources */,
+                5B82B952222867F200171078 /* Frameworks */,
+                5B82B953222867F200171078 /* Resources */,
+                DE7268A5ED5AE6855DD64BD8 /* [CP] Embed Pods Frameworks */,
+                4479DA82D63CCA066B362BC9 /* [CP] Copy Pods Resources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+            );
+            name = TakeYourSeat;
+            productName = TakeYourSeat;
+            productReference = 5B82B955222867F200171078 /* TakeYourSeat.app */;
+            productType = "com.apple.product-type.application";
+        };
+        5B82B968222867F400171078 /* TakeYourSeatTests */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 5B82B980222867F400171078 /* Build configuration list for PBXNativeTarget "TakeYourSeatTests" */;
+            buildPhases = (
+                6CD9FA44E7A44DFE7E0C354C /* [CP] Check Pods Manifest.lock */,
+                5B82B965222867F400171078 /* Sources */,
+                5B82B966222867F400171078 /* Frameworks */,
+                5B82B967222867F400171078 /* Resources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+                5B82B96B222867F400171078 /* PBXTargetDependency */,
+            );
+            name = TakeYourSeatTests;
+            productName = TakeYourSeatTests;
+            productReference = 5B82B969222867F400171078 /* TakeYourSeatTests.xctest */;
+            productType = "com.apple.product-type.bundle.unit-test";
+        };
+        5B82B973222867F400171078 /* TakeYourSeatUITests */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 5B82B983222867F400171078 /* Build configuration list for PBXNativeTarget "TakeYourSeatUITests" */;
+            buildPhases = (
+                E9ACF88070422D1CFD9F0D23 /* [CP] Check Pods Manifest.lock */,
+                5B82B970222867F400171078 /* Sources */,
+                5B82B971222867F400171078 /* Frameworks */,
+                5B82B972222867F400171078 /* Resources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+                5B82B976222867F400171078 /* PBXTargetDependency */,
+            );
+            name = TakeYourSeatUITests;
+            productName = TakeYourSeatUITests;
+            productReference = 5B82B974222867F400171078 /* TakeYourSeatUITests.xctest */;
+            productType = "com.apple.product-type.bundle.ui-testing";
+        };
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5B82B94D222867F200171078 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				KnownAssetTags = (
-					1,
-				);
-				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = AlvaroManelTaniaUri;
-				TargetAttributes = {
-					5B82B954222867F200171078 = {
-						CreatedOnToolsVersion = 10.1;
-					};
-					5B82B968222867F400171078 = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 5B82B954222867F200171078;
-					};
-					5B82B973222867F400171078 = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 5B82B954222867F200171078;
-					};
-				};
-			};
-			buildConfigurationList = 5B82B950222867F200171078 /* Build configuration list for PBXProject "TakeYourSeat" */;
-			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = en;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 5B82B94C222867F200171078;
-			productRefGroup = 5B82B956222867F200171078 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				5B82B954222867F200171078 /* TakeYourSeat */,
-				5B82B968222867F400171078 /* TakeYourSeatTests */,
-				5B82B973222867F400171078 /* TakeYourSeatUITests */,
-			);
-		};
+        5B82B94D222867F200171078 /* Project object */ = {
+            isa = PBXProject;
+            attributes = {
+                KnownAssetTags = (
+                    1,
+                );
+                LastSwiftUpdateCheck = 1010;
+                LastUpgradeCheck = 1010;
+                ORGANIZATIONNAME = AlvaroManelTaniaUri;
+                TargetAttributes = {
+                    5B82B954222867F200171078 = {
+                        CreatedOnToolsVersion = 10.1;
+                    };
+                    5B82B968222867F400171078 = {
+                        CreatedOnToolsVersion = 10.1;
+                        TestTargetID = 5B82B954222867F200171078;
+                    };
+                    5B82B973222867F400171078 = {
+                        CreatedOnToolsVersion = 10.1;
+                        TestTargetID = 5B82B954222867F200171078;
+                    };
+                };
+            };
+            buildConfigurationList = 5B82B950222867F200171078 /* Build configuration list for PBXProject "TakeYourSeat" */;
+            compatibilityVersion = "Xcode 9.3";
+            developmentRegion = en;
+            hasScannedForEncodings = 0;
+            knownRegions = (
+                en,
+                Base,
+            );
+            mainGroup = 5B82B94C222867F200171078;
+            productRefGroup = 5B82B956222867F200171078 /* Products */;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (
+                5B82B954222867F200171078 /* TakeYourSeat */,
+                5B82B968222867F400171078 /* TakeYourSeatTests */,
+                5B82B973222867F400171078 /* TakeYourSeatUITests */,
+            );
+        };
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5B82B953222867F200171078 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B043C2F22452B4700FDD0D3 /* GoogleService-Info.plist in Resources */,
-				5B82B963222867F400171078 /* LaunchScreen.storyboard in Resources */,
-				5B82B960222867F400171078 /* Assets.xcassets in Resources */,
-				5B043C3122453B1B00FDD0D3 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B82B967222867F400171078 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B82B972222867F400171078 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        5B82B953222867F200171078 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                5B043C2F22452B4700FDD0D3 /* GoogleService-Info.plist in Resources */,
+                5B82B963222867F400171078 /* LaunchScreen.storyboard in Resources */,
+                5B82B960222867F400171078 /* Assets.xcassets in Resources */,
+                5B043C3122453B1B00FDD0D3 /* Main.storyboard in Resources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        5B82B967222867F400171078 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        5B82B972222867F400171078 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3247E18C26C91FC20E27C1FE /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TakeYourSeat-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4479DA82D63CCA066B362BC9 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TakeYourSeat/Pods-TakeYourSeat-resources.sh",
-				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TakeYourSeat/Pods-TakeYourSeat-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6CD9FA44E7A44DFE7E0C354C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TakeYourSeatTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DE7268A5ED5AE6855DD64BD8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TakeYourSeat/Pods-TakeYourSeat-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TakeYourSeat/Pods-TakeYourSeat-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E9ACF88070422D1CFD9F0D23 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TakeYourSeatUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
+        3247E18C26C91FC20E27C1FE /* [CP] Check Pods Manifest.lock */ = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputFileListPaths = (
+            );
+            inputPaths = (
+                "${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+                "${PODS_ROOT}/Manifest.lock",
+            );
+            name = "[CP] Check Pods Manifest.lock";
+            outputFileListPaths = (
+            );
+            outputPaths = (
+                "$(DERIVED_FILE_DIR)/Pods-TakeYourSeat-checkManifestLockResult.txt",
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+            showEnvVarsInLog = 0;
+        };
+        4479DA82D63CCA066B362BC9 /* [CP] Copy Pods Resources */ = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputFileListPaths = (
+            );
+            inputPaths = (
+                "${SRCROOT}/Pods/Target Support Files/Pods-TakeYourSeat/Pods-TakeYourSeat-resources.sh",
+                "${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+            );
+            name = "[CP] Copy Pods Resources";
+            outputFileListPaths = (
+            );
+            outputPaths = (
+                "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TakeYourSeat/Pods-TakeYourSeat-resources.sh\"\n";
+            showEnvVarsInLog = 0;
+        };
+        6CD9FA44E7A44DFE7E0C354C /* [CP] Check Pods Manifest.lock */ = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputFileListPaths = (
+            );
+            inputPaths = (
+                "${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+                "${PODS_ROOT}/Manifest.lock",
+            );
+            name = "[CP] Check Pods Manifest.lock";
+            outputFileListPaths = (
+            );
+            outputPaths = (
+                "$(DERIVED_FILE_DIR)/Pods-TakeYourSeatTests-checkManifestLockResult.txt",
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+            showEnvVarsInLog = 0;
+        };
+        DE7268A5ED5AE6855DD64BD8 /* [CP] Embed Pods Frameworks */ = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputFileListPaths = (
+            );
+            inputPaths = (
+                "${SRCROOT}/Pods/Target Support Files/Pods-TakeYourSeat/Pods-TakeYourSeat-frameworks.sh",
+                "${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+                "${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+                "${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+                "${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+            );
+            name = "[CP] Embed Pods Frameworks";
+            outputFileListPaths = (
+            );
+            outputPaths = (
+                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TakeYourSeat/Pods-TakeYourSeat-frameworks.sh\"\n";
+            showEnvVarsInLog = 0;
+        };
+        E9ACF88070422D1CFD9F0D23 /* [CP] Check Pods Manifest.lock */ = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputFileListPaths = (
+            );
+            inputPaths = (
+                "${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+                "${PODS_ROOT}/Manifest.lock",
+            );
+            name = "[CP] Check Pods Manifest.lock";
+            outputFileListPaths = (
+            );
+            outputPaths = (
+                "$(DERIVED_FILE_DIR)/Pods-TakeYourSeatUITests-checkManifestLockResult.txt",
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+            showEnvVarsInLog = 0;
+        };
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5B82B951222867F200171078 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				815A603A222995DA0007300B /* Restaurant.swift in Sources */,
-				815A6038222995120007300B /* RestaurantCell.swift in Sources */,
-				815A603C222999F80007300B /* RestaurantDetail.swift in Sources */,
-				5B82B95B222867F200171078 /* ViewController.swift in Sources */,
-				814910FD2245402E007BBC4D /* TableViewRestaurantes.swift in Sources */,
-				5B82B959222867F200171078 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B82B965222867F400171078 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B82B96E222867F400171078 /* TakeYourSeatTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B82B970222867F400171078 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B82B979222867F400171078 /* TakeYourSeatUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        5B82B951222867F200171078 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                5B043C33224543AB00FDD0D3 /* Selection.swift in Sources */,
+                815A603A222995DA0007300B /* Restaurant.swift in Sources */,
+                815A6038222995120007300B /* RestaurantCell.swift in Sources */,
+                815A603C222999F80007300B /* RestaurantDetail.swift in Sources */,
+                5B82B95B222867F200171078 /* ViewController.swift in Sources */,
+                814910FD2245402E007BBC4D /* TableViewRestaurantes.swift in Sources */,
+                5B82B959222867F200171078 /* AppDelegate.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        5B82B965222867F400171078 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                5B82B96E222867F400171078 /* TakeYourSeatTests.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        5B82B970222867F400171078 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                5B82B979222867F400171078 /* TakeYourSeatUITests.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5B82B96B222867F400171078 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5B82B954222867F200171078 /* TakeYourSeat */;
-			targetProxy = 5B82B96A222867F400171078 /* PBXContainerItemProxy */;
-		};
-		5B82B976222867F400171078 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5B82B954222867F200171078 /* TakeYourSeat */;
-			targetProxy = 5B82B975222867F400171078 /* PBXContainerItemProxy */;
-		};
+        5B82B96B222867F400171078 /* PBXTargetDependency */ = {
+            isa = PBXTargetDependency;
+            target = 5B82B954222867F200171078 /* TakeYourSeat */;
+            targetProxy = 5B82B96A222867F400171078 /* PBXContainerItemProxy */;
+        };
+        5B82B976222867F400171078 /* PBXTargetDependency */ = {
+            isa = PBXTargetDependency;
+            target = 5B82B954222867F200171078 /* TakeYourSeat */;
+            targetProxy = 5B82B975222867F400171078 /* PBXContainerItemProxy */;
+        };
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5B82B961222867F400171078 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5B82B962222867F400171078 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
+        5B82B961222867F400171078 /* LaunchScreen.storyboard */ = {
+            isa = PBXVariantGroup;
+            children = (
+                5B82B962222867F400171078 /* Base */,
+            );
+            name = LaunchScreen.storyboard;
+            sourceTree = "<group>";
+        };
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		5B82B97B222867F400171078 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				NEW_SETTING = "";
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		5B82B97C222867F400171078 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				NEW_SETTING = "";
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		5B82B97E222867F400171078 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBFD2F23153410EE4295364C /* Pods-TakeYourSeat.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TakeYourSeat/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = alv.TakeYourSeat;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		5B82B97F222867F400171078 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3704A18920B784CA59B100D /* Pods-TakeYourSeat.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TakeYourSeat/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = alv.TakeYourSeat;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		5B82B981222867F400171078 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 368F0CFAD887AEB7F37400CD /* Pods-TakeYourSeatTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TakeYourSeatTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = alv.TakeYourSeatTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TakeYourSeat.app/TakeYourSeat";
-			};
-			name = Debug;
-		};
-		5B82B982222867F400171078 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69E9E9C0ECCDEE75CA90CDC7 /* Pods-TakeYourSeatTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TakeYourSeatTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = alv.TakeYourSeatTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TakeYourSeat.app/TakeYourSeat";
-			};
-			name = Release;
-		};
-		5B82B984222867F400171078 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3216A66A97E60CA1F035DAA /* Pods-TakeYourSeatUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TakeYourSeatUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = alv.TakeYourSeatUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TakeYourSeat;
-			};
-			name = Debug;
-		};
-		5B82B985222867F400171078 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C2EF3F31310010CD0BD2E41 /* Pods-TakeYourSeatUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TakeYourSeatUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = alv.TakeYourSeatUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TakeYourSeat;
-			};
-			name = Release;
-		};
+        5B82B97B222867F400171078 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_ANALYZER_NONNULL = YES;
+                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_ENABLE_OBJC_WEAK = YES;
+                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+                CLANG_WARN_BOOL_CONVERSION = YES;
+                CLANG_WARN_COMMA = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+                CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+                CLANG_WARN_STRICT_PROTOTYPES = YES;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+                CLANG_WARN_UNREACHABLE_CODE = YES;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                CODE_SIGN_IDENTITY = "iPhone Developer";
+                COPY_PHASE_STRIP = NO;
+                DEBUG_INFORMATION_FORMAT = dwarf;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                ENABLE_TESTABILITY = YES;
+                GCC_C_LANGUAGE_STANDARD = gnu11;
+                GCC_DYNAMIC_NO_PIC = NO;
+                GCC_NO_COMMON_BLOCKS = YES;
+                GCC_OPTIMIZATION_LEVEL = 0;
+                GCC_PREPROCESSOR_DEFINITIONS = (
+                    "DEBUG=1",
+                    "$(inherited)",
+                );
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+                MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+                MTL_FAST_MATH = YES;
+                NEW_SETTING = "";
+                ONLY_ACTIVE_ARCH = YES;
+                SDKROOT = iphoneos;
+                SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+                SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+            };
+            name = Debug;
+        };
+        5B82B97C222867F400171078 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_ANALYZER_NONNULL = YES;
+                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_ENABLE_OBJC_WEAK = YES;
+                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+                CLANG_WARN_BOOL_CONVERSION = YES;
+                CLANG_WARN_COMMA = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+                CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+                CLANG_WARN_STRICT_PROTOTYPES = YES;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+                CLANG_WARN_UNREACHABLE_CODE = YES;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                CODE_SIGN_IDENTITY = "iPhone Developer";
+                COPY_PHASE_STRIP = NO;
+                DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+                ENABLE_NS_ASSERTIONS = NO;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                GCC_C_LANGUAGE_STANDARD = gnu11;
+                GCC_NO_COMMON_BLOCKS = YES;
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+                MTL_ENABLE_DEBUG_INFO = NO;
+                MTL_FAST_MATH = YES;
+                NEW_SETTING = "";
+                SDKROOT = iphoneos;
+                SWIFT_COMPILATION_MODE = wholemodule;
+                SWIFT_OPTIMIZATION_LEVEL = "-O";
+                VALIDATE_PRODUCT = YES;
+            };
+            name = Release;
+        };
+        5B82B97E222867F400171078 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = BBFD2F23153410EE4295364C /* Pods-TakeYourSeat.debug.xcconfig */;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_STYLE = Automatic;
+                INFOPLIST_FILE = TakeYourSeat/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = alv.TakeYourSeat;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.2;
+                TARGETED_DEVICE_FAMILY = "1,2";
+            };
+            name = Debug;
+        };
+        5B82B97F222867F400171078 /* Release */ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = C3704A18920B784CA59B100D /* Pods-TakeYourSeat.release.xcconfig */;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_STYLE = Automatic;
+                INFOPLIST_FILE = TakeYourSeat/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = alv.TakeYourSeat;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.2;
+                TARGETED_DEVICE_FAMILY = "1,2";
+            };
+            name = Release;
+        };
+        5B82B981222867F400171078 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = 368F0CFAD887AEB7F37400CD /* Pods-TakeYourSeatTests.debug.xcconfig */;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                BUNDLE_LOADER = "$(TEST_HOST)";
+                CODE_SIGN_STYLE = Automatic;
+                INFOPLIST_FILE = TakeYourSeatTests/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                    "@loader_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = alv.TakeYourSeatTests;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.2;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TakeYourSeat.app/TakeYourSeat";
+            };
+            name = Debug;
+        };
+        5B82B982222867F400171078 /* Release */ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = 69E9E9C0ECCDEE75CA90CDC7 /* Pods-TakeYourSeatTests.release.xcconfig */;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                BUNDLE_LOADER = "$(TEST_HOST)";
+                CODE_SIGN_STYLE = Automatic;
+                INFOPLIST_FILE = TakeYourSeatTests/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                    "@loader_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = alv.TakeYourSeatTests;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.2;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TakeYourSeat.app/TakeYourSeat";
+            };
+            name = Release;
+        };
+        5B82B984222867F400171078 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = C3216A66A97E60CA1F035DAA /* Pods-TakeYourSeatUITests.debug.xcconfig */;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                CODE_SIGN_STYLE = Automatic;
+                INFOPLIST_FILE = TakeYourSeatUITests/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                    "@loader_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = alv.TakeYourSeatUITests;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.2;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                TEST_TARGET_NAME = TakeYourSeat;
+            };
+            name = Debug;
+        };
+        5B82B985222867F400171078 /* Release */ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = 4C2EF3F31310010CD0BD2E41 /* Pods-TakeYourSeatUITests.release.xcconfig */;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                CODE_SIGN_STYLE = Automatic;
+                INFOPLIST_FILE = TakeYourSeatUITests/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                    "@loader_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = alv.TakeYourSeatUITests;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.2;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                TEST_TARGET_NAME = TakeYourSeat;
+            };
+            name = Release;
+        };
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5B82B950222867F200171078 /* Build configuration list for PBXProject "TakeYourSeat" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5B82B97B222867F400171078 /* Debug */,
-				5B82B97C222867F400171078 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5B82B97D222867F400171078 /* Build configuration list for PBXNativeTarget "TakeYourSeat" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5B82B97E222867F400171078 /* Debug */,
-				5B82B97F222867F400171078 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5B82B980222867F400171078 /* Build configuration list for PBXNativeTarget "TakeYourSeatTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5B82B981222867F400171078 /* Debug */,
-				5B82B982222867F400171078 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5B82B983222867F400171078 /* Build configuration list for PBXNativeTarget "TakeYourSeatUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5B82B984222867F400171078 /* Debug */,
-				5B82B985222867F400171078 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
+        5B82B950222867F200171078 /* Build configuration list for PBXProject "TakeYourSeat" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                5B82B97B222867F400171078 /* Debug */,
+                5B82B97C222867F400171078 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        5B82B97D222867F400171078 /* Build configuration list for PBXNativeTarget "TakeYourSeat" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                5B82B97E222867F400171078 /* Debug */,
+                5B82B97F222867F400171078 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        5B82B980222867F400171078 /* Build configuration list for PBXNativeTarget "TakeYourSeatTests" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                5B82B981222867F400171078 /* Debug */,
+                5B82B982222867F400171078 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        5B82B983222867F400171078 /* Build configuration list for PBXNativeTarget "TakeYourSeatUITests" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                5B82B984222867F400171078 /* Debug */,
+                5B82B985222867F400171078 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
 /* End XCConfigurationList section */
-	};
-	rootObject = 5B82B94D222867F200171078 /* Project object */;
+    };
+    rootObject = 5B82B94D222867F200171078 /* Project object */;
 }
