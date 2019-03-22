@@ -28,21 +28,18 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
     
     @IBOutlet weak var signInButton: GIDSignInButton!
     
-    
-    //Guardamos el boton al que le da el usuario
-    @IBAction func Option(_ sender: UIButton) {
-        selectedOption = sender.tag
+    @IBAction func SignedIn(_ sender: Any) {
+        //let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "asd")
+        let vc = storyboard?.instantiateViewController(withIdentifier: "asd")
+        //self.present(vc, animated: true)
+        self.navigationController?.pushViewController(vc!, animated: true)
     }
-    
     
     func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!,
                 withError error: NSError!) {
         if (error == nil) {
             // Perform any operations on signed in user here.
             // ...
-            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "asd")
-            self.present(vc, animated: true)
-            
             print("log")
             
         } else {
