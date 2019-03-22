@@ -147,6 +147,7 @@
 		5B82B957222867F200171078 /* TakeYourSeat */ = {
 			isa = PBXGroup;
 			children = (
+				5B5501E9223C10AC00D194E5 /* GoogleService-Info.plist */,
 				5B82B958222867F200171078 /* AppDelegate.swift */,
 				5B82B95A222867F200171078 /* ViewController.swift */,
 				5B82B95C222867F200171078 /* Main.storyboard */,
@@ -157,7 +158,6 @@
 				815A6037222995120007300B /* RestaurantCell.swift */,
 				815A6039222995DA0007300B /* Restaurant.swift */,
 				815A603B222999F80007300B /* RestaurantDetail.swift */,
-				5B5501E9223C10AC00D194E5 /* GoogleService-Info.plist */,
 			);
 			path = TakeYourSeat;
 			sourceTree = "<group>";
