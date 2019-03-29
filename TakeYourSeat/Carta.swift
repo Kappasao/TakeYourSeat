@@ -14,6 +14,9 @@ var pesto:Plato = Plato(nombre: "Espaguetis pesto", procedencia: "Italia", image
 var queso:Plato = Plato(nombre: "Espaguetis con queso", procedencia: "Italia", imagen: UIImage(named: "queso")!)
 
 
+var burger:Plato = Plato(nombre: "Burger", procedencia: "USA", imagen: UIImage(named: "burger")!)
+var fries:Plato = Plato(nombre: "Patatas fritas", procedencia: "Francia", imagen: UIImage(named: "fries")!)
+var frankfurt:Plato = Plato(nombre: "Hot dog", procedencia: "Alemania", imagen: UIImage(named: "frankfurt")!)
 
 
 class Carta {

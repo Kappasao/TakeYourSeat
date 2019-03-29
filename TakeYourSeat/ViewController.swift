@@ -11,16 +11,17 @@ import GoogleSignIn
 import FirebaseAuth
 
 var cartaItaliano: Carta = Carta(platos: [bolo, pesto, queso])
+var cartaFastFood: Carta = Carta(platos: [burger, fries, frankfurt])
 //Opcion seleccionada dependiendo del boton al que le damos
 
 //Opciones estaticas de momento para recoger si es para comer aqui o no
 var opciones = ["Aqui","Para llevar"]
 var restComerAqui:[Restaurante] = [Restaurante(name: "Comer aqui 1", image: UIImage(named: "rest1")!, location: "C/ sepulveda 65", menu: cartaItaliano),
-                                   Restaurante(name: "Comer aqui 2", image: UIImage(named: "rest2")!, location: "C/ comte borrell 37", menu: cartaItaliano),
+                                   Restaurante(name: "Comer aqui 2", image: UIImage(named: "rest2")!, location: "C/ comte borrell 37", menu: cartaFastFood),
                                    Restaurante(name: "Comer aqui 3", image: UIImage(named: "rest3")!, location: "C/ muntaner 1", menu: cartaItaliano),
-                                   Restaurante(name: "Llevar 1", image: UIImage(named: "rest4")!, location: "C/ urgell 201", menu: cartaItaliano),
+                                   Restaurante(name: "Llevar 1", image: UIImage(named: "rest4")!, location: "C/ urgell 201", menu: cartaFastFood),
                                    Restaurante(name: "Llevar 2", image: UIImage(named: "rest5")!, location: "C/ pelai 81", menu: cartaItaliano),
-                                   Restaurante(name: "Llevar 3", image: UIImage(named: "rest6")!, location: "C/ còrsega 109", menu: cartaItaliano)
+                                   Restaurante(name: "Llevar 3", image: UIImage(named: "rest6")!, location: "C/ còrsega 109", menu: cartaFastFood)
 ]
 
 

@@ -23,4 +23,8 @@ class Restaurante {
         self.menu = menu
     }
     
+    func getNumPlatos(menu:Carta) -> Int{
+        return menu.platos.count
+    }
+    
 }
