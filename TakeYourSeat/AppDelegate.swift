@@ -10,6 +10,8 @@ import UIKit
 import Firebase
 import GoogleSignIn
 
+var name = String()
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     
@@ -24,6 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken, accessToken: authentication.accessToken)
             Auth.auth().signInAndRetrieveData(with: credential, completion: { (result, error) in
                 if error == nil{
+                    name = (result?.user.displayName!)!
                     print(result?.user.email)
                     print(result?.user.displayName)
                 }

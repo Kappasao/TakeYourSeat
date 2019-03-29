@@ -261,7 +261,7 @@
         <!--View Controller-->
         <scene sceneID="GzN-09-vbO">
             <objects>
-                <viewController id="sM6-35-M3b" customClass="ViewController" customModule="TakeYourSeat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="start" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sM6-35-M3b" customClass="ViewController" customModule="TakeYourSeat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YwC-jF-l9k">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -305,6 +305,9 @@
                         <viewLayoutGuide key="safeArea" id="8a7-OT-V8f"/>
                     </view>
                     <navigationItem key="navigationItem" id="tPp-st-RyT"/>
+                    <connections>
+                        <outlet property="signInButton" destination="Zsq-Bc-4dL" id="J9q-Vk-Uql"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Pc-Ge-D7f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -313,7 +316,7 @@
         <!--Table View Restaurantes-->
         <scene sceneID="1Tg-3e-rJx">
             <objects>
-                <viewController id="4NV-Vk-j15" customClass="TableViewRestaurantes" customModule="TakeYourSeat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="asd" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4NV-Vk-j15" customClass="TableViewRestaurantes" customModule="TakeYourSeat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bZJ-rc-f3d">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -411,6 +414,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QzU-K0-ktv">
+                                <rect key="frame" x="138" y="460" width="118" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="signOutPressed:" destination="OUv-n4-3ie" eventType="touchUpInside" id="Vt6-1o-LeB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ZTL-rd-IWx"/>

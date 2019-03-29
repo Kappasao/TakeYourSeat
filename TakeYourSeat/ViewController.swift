@@ -8,6 +8,7 @@
 
 import UIKit
 import GoogleSignIn
+import FirebaseAuth
 
 var cartaItaliano: Carta = Carta(platos: [bolo, pesto, queso])
 //Opcion seleccionada dependiendo del boton al que le damos
@@ -29,18 +30,10 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
     
     @IBOutlet weak var signInButton: GIDSignInButton!
     
-    @IBAction func SignedIn(_ sender: Any) {
-        //let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "asd")
-        let vc = storyboard?.instantiateViewController(withIdentifier: "asd")
-        //self.present(vc, animated: true)
-        self.navigationController?.pushViewController(vc!, animated: true)
-    }
-    
     func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!,
                 withError error: NSError!) {
         if (error == nil) {
-            // Perform any operations on signed in user here.
-            // ...
+            
             print("log")
             
         } else {
@@ -51,6 +44,16 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         GIDSignIn.sharedInstance().uiDelegate = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        name = (Auth.auth().currentUser?.displayName ?? "")
+        
+        if !name.isEmpty{
+            let vc = storyboard?.instantiateViewController(withIdentifier: "asd")
+            //self.present(vc, animated: true)
+            self.navigationController?.pushViewController(vc!, animated: false)
+        }
     }
     
 }

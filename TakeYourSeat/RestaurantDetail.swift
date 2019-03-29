@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+import GoogleSignIn
 
 class RestaurantDetail: UIViewController {
 
@@ -24,6 +26,19 @@ class RestaurantDetail: UIViewController {
         restImg.image = img
         restDesc.text = desc
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func signOutPressed(_ sender: Any) {
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+            name = ""
+            let vc = storyboard?.instantiateViewController(withIdentifier: "start")
+            self.navigationController?.pushViewController(vc!, animated: false)
+            
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
     }
 
 }
