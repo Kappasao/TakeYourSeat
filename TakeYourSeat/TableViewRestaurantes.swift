@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+var restauranteGuardado:Int = Int()
+
 class TableViewRestaurantes : UIViewController, UITableViewDataSource, UITableViewDelegate{
     
     @IBOutlet weak var tableView: UITableView!
@@ -31,7 +33,7 @@ class TableViewRestaurantes : UIViewController, UITableViewDataSource, UITableVi
         
         vc.img = restComerAqui[indexPath.row].image
         vc.nombre = restComerAqui[indexPath.row].name
-        
+        restauranteGuardado = indexPath.row
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

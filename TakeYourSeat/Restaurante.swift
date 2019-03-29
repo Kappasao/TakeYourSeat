@@ -9,16 +9,18 @@
 import Foundation
 import UIKit
 
-class Restaurant {
+class Restaurante {
     
     var name:String = String()
     var image:UIImage = UIImage()
     var location:String = String()
+    var menu:Carta
     
-    init(name:String, image:UIImage, location:String) {
+    init(name:String, image:UIImage, location:String, menu:Carta) {
         self.name = name
         self.image = image
         self.location = location
+        self.menu = menu
     }
     
 }
