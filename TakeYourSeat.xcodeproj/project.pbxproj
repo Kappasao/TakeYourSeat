@@ -20,6 +20,8 @@
 		5B82B979222867F400171078 /* TakeYourSeatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82B978222867F400171078 /* TakeYourSeatUITests.swift */; };
 		810C223D224E63F700DB5B16 /* Plato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810C223C224E63F700DB5B16 /* Plato.swift */; };
 		810C2241224E65EE00DB5B16 /* Carta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810C2240224E65EE00DB5B16 /* Carta.swift */; };
+		810C2245224E6A7700DB5B16 /* TableViewMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810C2244224E6A7700DB5B16 /* TableViewMenu.swift */; };
+		810C2247224E6D0200DB5B16 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810C2246224E6D0200DB5B16 /* MenuCell.swift */; };
 		814910FD2245402E007BBC4D /* TableViewRestaurantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814910FC2245402E007BBC4D /* TableViewRestaurantes.swift */; };
 		815A6038222995120007300B /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815A6037222995120007300B /* RestaurantCell.swift */; };
 		815A603A222995DA0007300B /* Restaurante.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815A6039222995DA0007300B /* Restaurante.swift */; };
@@ -65,6 +67,8 @@
 		69E9E9C0ECCDEE75CA90CDC7 /* Pods-TakeYourSeatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeYourSeatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TakeYourSeatTests/Pods-TakeYourSeatTests.release.xcconfig"; sourceTree = "<group>"; };
 		810C223C224E63F700DB5B16 /* Plato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plato.swift; sourceTree = "<group>"; };
 		810C2240224E65EE00DB5B16 /* Carta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carta.swift; sourceTree = "<group>"; };
+		810C2244224E6A7700DB5B16 /* TableViewMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewMenu.swift; sourceTree = "<group>"; };
+		810C2246224E6D0200DB5B16 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		814910FC2245402E007BBC4D /* TableViewRestaurantes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewRestaurantes.swift; sourceTree = "<group>"; };
 		815A6037222995120007300B /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
 		815A6039222995DA0007300B /* Restaurante.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurante.swift; sourceTree = "<group>"; };
@@ -167,6 +171,8 @@
 				814910FC2245402E007BBC4D /* TableViewRestaurantes.swift */,
 				810C223C224E63F700DB5B16 /* Plato.swift */,
 				810C2240224E65EE00DB5B16 /* Carta.swift */,
+				810C2244224E6A7700DB5B16 /* TableViewMenu.swift */,
+				810C2246224E6D0200DB5B16 /* MenuCell.swift */,
 			);
 			path = TakeYourSeat;
 			sourceTree = "<group>";
@@ -450,8 +456,10 @@
 			files = (
 				5B043C33224543AB00FDD0D3 /* Selection.swift in Sources */,
 				815A603A222995DA0007300B /* Restaurante.swift in Sources */,
+				810C2245224E6A7700DB5B16 /* TableViewMenu.swift in Sources */,
 				815A6038222995120007300B /* RestaurantCell.swift in Sources */,
 				815A603C222999F80007300B /* RestaurantDetail.swift in Sources */,
+				810C2247224E6D0200DB5B16 /* MenuCell.swift in Sources */,
 				5B82B95B222867F200171078 /* ViewController.swift in Sources */,
 				814910FD2245402E007BBC4D /* TableViewRestaurantes.swift in Sources */,
 				810C2241224E65EE00DB5B16 /* Carta.swift in Sources */,
