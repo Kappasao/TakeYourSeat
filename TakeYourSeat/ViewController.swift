@@ -33,7 +33,7 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
     func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!,
                 withError error: NSError!) {
         if (error == nil) {
-            
+            comprovation()
             print("log")
             
         } else {
@@ -47,6 +47,14 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        comprovation()
+    }
+    
+    override func reloadInputViews() {
+        comprovation()
+    }
+    
+    func comprovation(){
         name = (Auth.auth().currentUser?.displayName ?? "")
         
         if !name.isEmpty{

@@ -29,6 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
                     name = (result?.user.displayName!)!
                     print(result?.user.email)
                     print(result?.user.displayName)
+                    
                 }
                 else{
                     print(error?.localizedDescription)
