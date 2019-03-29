@@ -12,6 +12,8 @@ import UIKit
 var bolo:Plato = Plato(nombre: "Espaguetis bolo", procedencia: "Italia", imagen: UIImage(named: "bolo")!)
 var pesto:Plato = Plato(nombre: "Espaguetis pesto", procedencia: "Italia", imagen: UIImage(named: "pesto")!)
 var queso:Plato = Plato(nombre: "Espaguetis con queso", procedencia: "Italia", imagen: UIImage(named: "queso")!)
+var queso1:Plato = Plato(nombre: "Espaguetis con queso", procedencia: "Italia", imagen: UIImage(named: "queso")!)
+var queso2:Plato = Plato(nombre: "Espaguetis con queso", procedencia: "Italia", imagen: UIImage(named: "queso")!)
 
 
 var burger:Plato = Plato(nombre: "Burger", procedencia: "USA", imagen: UIImage(named: "burger")!)

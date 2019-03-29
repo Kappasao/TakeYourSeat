@@ -17,7 +17,7 @@ class TableViewMenu : UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         carta = restComerAqui[restauranteGuardado].menu
-        let numPlatos:Int = carta.platos.count
+        let numPlatos:Int = carta.platos.count 
         return numPlatos
         
     }

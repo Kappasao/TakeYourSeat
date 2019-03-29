@@ -10,7 +10,7 @@ import UIKit
 import GoogleSignIn
 import FirebaseAuth
 
-var cartaItaliano: Carta = Carta(platos: [bolo, pesto, queso])
+var cartaItaliano: Carta = Carta(platos: [bolo, pesto, queso, queso1, queso2])
 var cartaFastFood: Carta = Carta(platos: [burger, fries, frankfurt])
 //Opcion seleccionada dependiendo del boton al que le damos
 
