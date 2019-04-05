@@ -8,6 +8,8 @@
 
 import UIKit
 
+var tbm: TableViewMenu = TableViewMenu()
+
 class MenuCell: UITableViewCell {
     
     @IBOutlet weak var imgPlato: UIImageView!
@@ -16,6 +18,7 @@ class MenuCell: UITableViewCell {
     @IBOutlet weak var precioPlato: UILabel!
     @IBOutlet weak var add: UIButton!
     @IBOutlet weak var remove: UIButton!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,14 +31,22 @@ class MenuCell: UITableViewCell {
     }
     
     @IBAction func añadirUnidad(_ sender: UIButton) {
+        carta = restComerAqui[restauranteGuardado].menu
+        let preu = carta.platos[comptador].precio
         let num = Int(numUnidades.text!)
         numUnidades.text = String(num! + 1)
+        precioTotal = precioTotal + preu
+        
     }
     
     @IBAction func quitarUnidad(_ sender: UIButton) {
+        carta = restComerAqui[restauranteGuardado].menu
+        let preu = carta.platos[comptador].precio
         let num = Int(numUnidades.text!)
         if num! >= 1 {
             numUnidades.text = String(num! - 1)
+            precioTotal = precioTotal - preu
+            
         }
     }
     

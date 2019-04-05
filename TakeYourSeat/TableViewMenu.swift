@@ -10,6 +10,11 @@ import Foundation
 import UIKit
 
 var carta:Carta = Carta(platos: [])
+var precioTotal:Int = 0
+var comptador: Int = 0
+
+
+
 
 class TableViewMenu : UIViewController, UITableViewDataSource, UITableViewDelegate{
     
@@ -30,7 +35,9 @@ class TableViewMenu : UIViewController, UITableViewDataSource, UITableViewDelega
         let strPrecio = "\(precio) €"
         myCell.nombrePlato.text = carta.platos[indexPath.row].nombre
         myCell.imgPlato.image = carta.platos[indexPath.row].imagen
-        myCell.precioPlato.text = String(strPrecio)
+        myCell.precioPlato.text = strPrecio
+        comptador = indexPath.row
+        
         return myCell
     }
     
@@ -38,11 +45,14 @@ class TableViewMenu : UIViewController, UITableViewDataSource, UITableViewDelega
         return 130
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        totalAPagar.text = "Precio total: \(precioTotal)€"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        totalAPagar.text = "total a pagar: 0€"
     }
 
 }
