@@ -46,10 +46,12 @@ class TableViewMenu : UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        
         totalAPagar.text = "Precio total: \(precioTotal)€"
     }
     
     override func viewDidLoad() {
+        //NotificationCenter.default.addObserver(self, selector: #selector(onDidReciveData(_:)), name: <#T##NSNotification.Name?#>, object: <#T##Any?#>)
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self

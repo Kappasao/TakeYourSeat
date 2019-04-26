@@ -31,8 +31,14 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
     
     @IBOutlet weak var signInButton: GIDSignInButton!
     
-    func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!,
-                withError error: NSError!) {
+    func sign(_ signIn: GIDSignIn!, present viewController: UIViewController!) {
+            comprovation()
+            print("log")
+    }
+    
+    
+    /*func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!,
+                withError error: Error!) {
         if (error == nil) {
             comprovation()
             print("log")
@@ -40,7 +46,23 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
         } else {
             print("\(error.localizedDescription)")
         }
-    }
+    }*/
+    
+    /*func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!,
+              withError error: Error!) {
+        if let error = error {
+            print("\(error.localizedDescription)")
+        } else {
+            // Perform any operations on signed in user here.
+            let userId = user.userID                  // For client-side use only!
+            let idToken = user.authentication.idToken // Safe to send to the server
+            let fullName = user.profile.name
+            let givenName = user.profile.givenName
+            let familyName = user.profile.familyName
+            let email = user.profile.email
+            // ...
+        }
+    }*/
     
     override func viewDidLoad() {
         super.viewDidLoad()
