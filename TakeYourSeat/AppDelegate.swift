@@ -29,13 +29,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
                     name = (result?.user.displayName!)!
                     print(result?.user.email)
                     print(result?.user.displayName)
+                   
+                    //UIStoryboard.instantiateViewController(withIdentifier: "asd")
                     
+                    //instantiateViewController(withIdentifier: "asd")
                 }
                 else{
                     print(error?.localizedDescription)
                 }
             })
         }
+    }
+    
+    func sign(_ signIn: GIDSignIn!, present viewController: UIViewController!) {
+        
+        print("log")
     }
         
         func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!,
@@ -54,7 +62,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
         
+        RunLoop.current.run(until: NSDate(timeIntervalSinceNow: 1) as Date)
+        
         return true
+        
+        
     }
     
         func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
