@@ -47,7 +47,7 @@ class TableViewMenu : UIViewController, UITableViewDataSource, UITableViewDelega
     
     override func viewDidAppear(_ animated: Bool) {
         
-        totalAPagar.text = "Precio total: \(precioTotal)€"
+        
     }
     
     override func viewDidLoad() {
@@ -55,6 +55,16 @@ class TableViewMenu : UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        precioTotal = 0
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(TableViewMenu.updateText), name: Notification.Name(rawValue: "precioTotal"), object: nil)
     }
+    
+    @objc func updateText(){
+        
+        totalAPagar.text = "Precio total: \(precioTotal)€"
+    }
+    
+    
 
 }

@@ -37,6 +37,8 @@ class MenuCell: UITableViewCell {
         numUnidades.text = String(num! + 1)
         precioTotal = precioTotal + preu
         
+        NotificationCenter.default.post(name: Notification.Name(rawValue: "precioTotal") , object: nil, userInfo: nil)
+        
     }
     
     @IBAction func quitarUnidad(_ sender: UIButton) {
@@ -46,7 +48,7 @@ class MenuCell: UITableViewCell {
         if num! >= 1 {
             numUnidades.text = String(num! - 1)
             precioTotal = precioTotal - preu
-            
+            NotificationCenter.default.post(name: Notification.Name(rawValue: "precioTotal") , object: nil, userInfo: nil)
         }
     }
     

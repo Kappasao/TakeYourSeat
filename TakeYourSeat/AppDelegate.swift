@@ -63,6 +63,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
         
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        var vc = storyboard.instantiateInitialViewController()
+        
+        if GIDSignIn.sharedInstance().hasAuthInKeychain() {
+            vc = storyboard.instantiateViewController(withIdentifier: "asd")
+        } else {
+            vc = storyboard.instantiateViewController(withIdentifier: "start")
+        }
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.window?.rootViewController = vc
+        
         RunLoop.current.run(until: NSDate(timeIntervalSinceNow: 1) as Date)
         
         
