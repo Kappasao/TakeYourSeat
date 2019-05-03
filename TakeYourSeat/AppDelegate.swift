@@ -29,6 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
                     name = (result?.user.displayName!)!
                     print(result?.user.email)
                     print(result?.user.displayName)
+                    
+                    NotificationCenter.default.post(name: Notification.Name("ToogleAuthUINotification"), object: nil, userInfo: ["statustext": "Signed in user:\n\(String(describing: name))"])
                    
                     //UIStoryboard.instantiateViewController(withIdentifier: "asd")
                     
@@ -49,7 +51,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!,
                   withError error: Error!) {
             // Perform any operations when the user disconnects from app here.
-            // ...
         }
 
 
@@ -63,6 +64,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         GIDSignIn.sharedInstance().delegate = self
         
         RunLoop.current.run(until: NSDate(timeIntervalSinceNow: 1) as Date)
+        
+        
         
         return true
         
