@@ -372,6 +372,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="180" translatesAutoresizingMaskIntoConstraints="NO" id="TM8-R9-P6R">
+                                <rect key="frame" x="140" y="136" width="94" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="8a7-OT-V8f"/>
@@ -568,6 +572,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="180" width="180" height="180"/>
         <image name="add" width="50" height="50"/>
         <image name="remove" width="50" height="50"/>
     </resources>
