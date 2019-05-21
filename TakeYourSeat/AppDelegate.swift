@@ -30,7 +30,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
                     print(result?.user.email)
                     print(result?.user.displayName)
                     
-                    NotificationCenter.default.post(name: Notification.Name("ToogleAuthUINotification"), object: nil, userInfo: ["statustext": "Signed in user:\n\(String(describing: name))"])
+                    //NotificationCenter.default.post(name: Notification.Name(rawValue: "ToogleAuthUINotification"), object: nil, userInfo: ["statustext": "Signed in user:\n\(String(describing: name))"])
+                    NotificationCenter.default.post(name: Notification.Name(rawValue: "ToogleAuthUINotification"), object: nil, userInfo: nil)
                    
                     //UIStoryboard.instantiateViewController(withIdentifier: "asd")
                     
@@ -81,8 +82,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         
         return true
         
-        
     }
+    
     
         func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
             return GIDSignIn.sharedInstance().handle(url as URL?,

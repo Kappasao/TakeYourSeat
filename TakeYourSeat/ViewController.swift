@@ -7,15 +7,15 @@
 //
 
 import UIKit
+import FirebaseDatabase
 import GoogleSignIn
 import FirebaseAuth
-import Firebase
 
 var cartaItaliano: Carta = Carta(platos: [bolo, pesto, queso, queso1, queso2])
 var cartaFastFood: Carta = Carta(platos: [burger, fries, frankfurt])
 //Opcion seleccionada dependiendo del boton al que le damos
 
-
+var ref: DatabaseReference!
 
 //Opciones estaticas de momento para recoger si es para comer aqui o no
 var opciones = ["Aqui","Para llevar"]
@@ -33,6 +33,8 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
     //Aqui empezamos
     
     
+    //ref = Database.database().reference()
+    
     @IBOutlet weak var signInButton: GIDSignInButton!
     
     func sign(_ signIn: GIDSignIn!, present viewController: UIViewController!) {
@@ -46,7 +48,6 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
         if (error == nil) {
             comprovation()
             print("log")
-            
         } else {
             print("\(error.localizedDescription)")
         }
@@ -71,6 +72,8 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         GIDSignIn.sharedInstance().uiDelegate = self
+        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.comprovation), name: Notification.Name("ToogleAuthUINotification"), object: nil)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -81,10 +84,10 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
         comprovation()
     }
     
-    func comprovation(){
-        name = (Auth.auth().currentUser?.displayName ?? "")
+    @objc func comprovation(){
+        name = Auth.auth().currentUser?.displayName ?? ""
         
-        if !name.isEmpty{
+        if name != ""{
             let vc = storyboard?.instantiateViewController(withIdentifier: "asd")
             //self.present(vc, animated: true)
             self.navigationController?.pushViewController(vc!, animated: false)
