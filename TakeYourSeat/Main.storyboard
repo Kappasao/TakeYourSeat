@@ -132,7 +132,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Dj-U0-UYa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5020" y="-582.45877061469275"/>
+            <point key="canvasLocation" x="4857" y="-584"/>
         </scene>
         <!--Table View Menu-->
         <scene sceneID="HTt-W0-jFq">
@@ -263,7 +263,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Pagar Online"/>
                                 <connections>
-                                    <segue destination="eQY-W7-zsh" kind="show" id="fpW-Zt-BPz"/>
+                                    <segue destination="Fgh-U1-toG" kind="show" id="aqT-J5-uiq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjX-Nd-prT">
@@ -282,6 +282,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hA5-XC-ui2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4081" y="-1294"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="30u-Kk-Hes">
+            <objects>
+                <viewController id="Fgh-U1-toG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UXd-5K-Ntf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pagar online" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHE-0y-xAp">
+                                <rect key="frame" x="140" y="307" width="95" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Al4-s8-Plm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qO3-0b-C0Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4862" y="-1989"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="GPh-V3-2oI">
@@ -577,7 +601,6 @@
         <image name="remove" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kBu-fe-Qqd"/>
-        <segue reference="Wqp-i4-nXO"/>
+        <segue reference="Yus-Ug-oq7"/>
     </inferredMetricsTieBreakers>
 </document>
