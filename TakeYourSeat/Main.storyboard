@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hog-ie-iSV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hog-ie-iSV">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,7 +25,7 @@
                                 <state key="normal" title="En el restaurante"/>
                                 <connections>
                                     <action selector="Option:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zge-tV-foI"/>
-                                    <segue destination="tZj-0s-7Vf" kind="show" id="w62-rz-mMa"/>
+                                    <segue destination="WSe-zV-yqc" kind="show" id="R5b-mR-ITO"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="¿Donde quieres comer?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ygw-nY-zla">
@@ -56,7 +56,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3484" y="-582.45877061469275"/>
+            <point key="canvasLocation" x="2369" y="-582"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="atu-km-eDu">
@@ -96,7 +96,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fx7-qG-b9r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4256.8000000000002" y="-582.45877061469275"/>
+            <point key="canvasLocation" x="4081" y="-582"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Nm9-G8-97S">
@@ -417,18 +417,18 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VWj-Oq-H5n">
-                                                    <rect key="frame" x="28" y="21" width="125" height="90"/>
+                                                    <rect key="frame" x="25" y="19" width="127" height="90"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAP-93-eDn">
-                                                    <rect key="frame" x="195" y="21" width="62" height="22"/>
+                                                    <rect key="frame" x="195" y="19" width="59" height="23"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwQ-b7-FEK">
-                                                    <rect key="frame" x="195" y="56" width="142" height="21"/>
+                                                    <rect key="frame" x="195" y="56" width="135" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -496,7 +496,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Escoger"/>
                                 <connections>
-                                    <segue destination="WSe-zV-yqc" kind="show" id="hKK-Fr-zuA"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="1lz-3c-6SY"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -511,12 +511,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WuY-pX-Nlr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1846" y="-582"/>
+            <point key="canvasLocation" x="1665" y="-584"/>
         </scene>
-        <!--View Controller-->
+        <!--Num Comensales-->
         <scene sceneID="M3g-65-jGS">
             <objects>
-                <viewController id="WSe-zV-yqc" sceneMemberID="viewController">
+                <viewController id="WSe-zV-yqc" customClass="NumComensales" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J9M-Ft-7FI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -540,7 +540,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Enviar"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="rNo-QB-vhl"/>
+                                    <segue destination="tZj-0s-7Vf" kind="show" id="xO3-0p-BVP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -550,7 +550,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="06m-xZ-Ts8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2740" y="-584.25787106446785"/>
+            <point key="canvasLocation" x="3318" y="-582"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="l3y-LK-vjk">
@@ -578,6 +578,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="kBu-fe-Qqd"/>
-        <segue reference="Yus-Ug-oq7"/>
+        <segue reference="Wqp-i4-nXO"/>
     </inferredMetricsTieBreakers>
 </document>
