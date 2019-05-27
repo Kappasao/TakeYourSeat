@@ -11,12 +11,16 @@ import UIKit
 
 var carta:Carta = Carta(platos: [])
 var precioTotal:Int = 0
-var comptador: Int = 0
-
-
+var comptador = Int()
+var pedidoPlatos: [String] = []
 
 
 class TableViewMenu : UIViewController, UITableViewDataSource, UITableViewDelegate{
+    
+    @IBAction func Pedido(_ sender: UIButton) {
+        NotificationCenter.default.addObserver(self, selector: #selector(TableViewMenu.updatePedido), name: Notification.Name(rawValue: "NombrePlatos"), object: comptador)
+        print(pedidoPlatos)
+    }
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var totalAPagar: UILabel!
@@ -37,6 +41,8 @@ class TableViewMenu : UIViewController, UITableViewDataSource, UITableViewDelega
         myCell.imgPlato.image = carta.platos[indexPath.row].imagen
         myCell.precioPlato.text = strPrecio
         comptador = indexPath.row
+        
+        
         
         return myCell
     }
@@ -61,10 +67,14 @@ class TableViewMenu : UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     @objc func updateText(){
-        
         totalAPagar.text = "Precio total: \(precioTotal)€"
     }
     
-    
-
+    @objc func updatePedido(){
+        let platiku = restComerAqui[comptador].name
+        pedidoPlatos.append(platiku)
+        print(pedidoPlatos)
+        
+        NotificationCenter.default.post(name: Notification.Name(rawValue: "Number"), object: comptador, userInfo: nil)
+    }
 }
