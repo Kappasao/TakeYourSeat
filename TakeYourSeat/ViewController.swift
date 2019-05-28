@@ -33,7 +33,7 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
     //Aqui empezamos
     
     
-    //ref = Database.database().reference()
+    
     
     @IBOutlet weak var signInButton: GIDSignInButton!
     
@@ -73,6 +73,7 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
         super.viewDidLoad()
         GIDSignIn.sharedInstance().uiDelegate = self
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.comprovation), name: Notification.Name("ToogleAuthUINotification"), object: nil)
+        
         
     }
     

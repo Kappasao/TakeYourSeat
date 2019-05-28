@@ -10,11 +10,18 @@ import Foundation
 import UIKit
 
 var selectedOption = Int()
+var takeaway = Bool()
 
 class Selection: UIViewController{
 
     @IBAction func Option(_ sender: UIButton) {
         selectedOption = sender.tag
+    
+        if sender.tag == 0 {
+            takeaway = false
+        } else{
+            takeaway = true
+        }
     }
     
 }

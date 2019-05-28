@@ -11,7 +11,7 @@ import UIKit
 
 class Decision: UIViewController{
     
-    var takeaway = Bool()
+    
     
     @IBOutlet weak var imageQr: UIImageView!
     var pedido = String()
@@ -24,7 +24,7 @@ class Decision: UIViewController{
             pedido = pedido + pedidu[i] + ", "
         }
         
-        if takeaway {
+        if takeaway == true {
             pedido = pedido + "Para llevar."
         } else{
             pedido = pedido + "Para comer aqui."
