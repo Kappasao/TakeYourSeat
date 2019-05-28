@@ -15,7 +15,7 @@ var restauranteGuardado:Int = Int()
 class TableViewRestaurantes : UIViewController, UITableViewDataSource, UITableViewDelegate{
     
     var ref: DatabaseReference!
-    var postDataRef = [String]()
+    var postDataRef = [Restaurante]()
     var databaseHandle: DatabaseHandle?
     
     @IBOutlet weak var tableView: UITableView!
@@ -29,21 +29,25 @@ class TableViewRestaurantes : UIViewController, UITableViewDataSource, UITableVi
         let myCell = tableView.dequeueReusableCell(withIdentifier: "myCell") as! RestaurantCell
         
         //myCell.restName.text = restComerAqui[indexPath.row].name
-        myCell.restName.text = postDataRef[indexPath.row]
+        myCell.restName.text = postDataRef[indexPath.row].name
+        myCell.restImg.image = postDataRef[indexPath.row].image
+        myCell.restLoc.text = postDataRef[indexPath.row].location
+        //let URL = URL(postDataRef[indexPath.row])
+        //myCell.restImg.image =
         //myCell.restImg.image = restComerAqui[indexPath.row].image
         //myCell.restLoc.text = restComerAqui[indexPath.row].location
         
         return myCell
     }
     
-    /*func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "restDetail") as! RestaurantDetail
         
-        vc.img = restComerAqui[indexPath.row].image
-        vc.nombre = restComerAqui[indexPath.row].name
+        vc.img = postDataRef[indexPath.row].image
+        vc.nombre = postDataRef[indexPath.row].name
         restauranteGuardado = indexPath.row
         self.navigationController?.pushViewController(vc, animated: true)
-    }*/
+    }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
@@ -55,15 +59,43 @@ class TableViewRestaurantes : UIViewController, UITableViewDataSource, UITableVi
         tableView.dataSource = self
         
         ref = Database.database().reference()
-        databaseHandle = ref.child("restaurants").queryOrderedByKey().observe(.childAdded) {
+        /*databaseHandle = ref.child("restaurants").child("Can Stucom").observe(.childAdded) {
             (snapshot) in
-            if let crudOne = snapshot.value as? [String: String]{
-                let name = crudOne["Name"]
-                self.postDataRef.append(name!)
+            if let crudOne = snapshot.value as? NSDictionary{
+                let name = crudOne["Name"] as! String
+                self.postDataRef.append(name)
+                print(name)
             }
+        }*/
+        /*
+         _commentsRef.observe(.value) { snapshot in
+         for child in snapshot.children {
+         ...
+         }
+         }
+         */
+        
+        ref.child("restaurants").child("Can Stucom").observeSingleEvent(of: .value, with: { (snapshot) in
+                // Get user value
+            
+            
+                let value = snapshot.value as? NSDictionary
+                let name = value?["Name"] as? String ?? ""
+                let url = value?["image"] as? String ?? ""
+                let location = value?["location"] as? String ?? ""
+                //let carta = value?["carta"] as? String ?? ""
+                let Url = URL(string: url)
+                if let data = try? Data(contentsOf: Url!) {
+                    let imagen: UIImage = (UIImage(data: data) ?? nil)!
+                    self.postDataRef.append(Restaurante(name: name, image: imagen, location: location))
+                }
+            
+                self.tableView.reloadData()
+            }) { (error) in
+                print(error.localizedDescription)
         }
         self.tableView.reloadData()
-        print(postDataRef)
+        
     }
     
     
