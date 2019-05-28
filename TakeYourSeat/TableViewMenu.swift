@@ -42,7 +42,7 @@ class TableViewMenu : UIViewController, UITableViewDataSource, UITableViewDelega
         myCell.precioPlato.text = strPrecio
         comptador = indexPath.row
         
-        
+        myCell.nombrePlato.tag = indexPath.row
         
         return myCell
     }
@@ -57,7 +57,7 @@ class TableViewMenu : UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     override func viewDidLoad() {
-        //NotificationCenter.default.addObserver(self, selector: #selector(onDidReciveData(_:)), name: <#T##NSNotification.Name?#>, object: <#T##Any?#>)
+        
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self

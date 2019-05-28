@@ -23,7 +23,7 @@ class MenuCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        NotificationCenter.default.addObserver(self, selector: #selector(self.counter), name: Notification.Name(rawValue: "Number"), object: nil)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -32,8 +32,7 @@ class MenuCell: UITableViewCell {
     }
     
     @IBAction func añadirUnidad(_ sender: UIButton) {
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(self.counter), name: Notification.Name(rawValue: "Number"), object: nil)
+        number = nombrePlato.tag
         //No añade bien el nombre
         carta = restComerAqui[restauranteGuardado].menu
         let plato = carta.platos[number].nombre
@@ -69,11 +68,6 @@ class MenuCell: UITableViewCell {
                 }
             }
         }
-            //borrar solo 1 de los elementos repetidos
-            //pedidoPlatos = pedidoPlatos.filter{$0 != plato}
-            
-        
-            
        
     }
     
