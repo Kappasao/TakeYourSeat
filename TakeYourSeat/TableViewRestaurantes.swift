@@ -18,6 +18,7 @@ class TableViewRestaurantes : UIViewController, UITableViewDataSource, UITableVi
     var ref: DatabaseReference!
     var filteredDataRef = [Restaurante]()
     var postDataRef = [Restaurante]()
+    var platosCarta = [Plato]()
     var databaseHandle: DatabaseHandle?
     
     @IBOutlet weak var tableView: UITableView!
@@ -87,10 +88,43 @@ class TableViewRestaurantes : UIViewController, UITableViewDataSource, UITableVi
                     let url = value?["image"]
                     let location = value?["location"]
                     let Url = URL(string: url as! String)
+                    
+                    
+                    if value?["Carta"] as? [String: AnyObject] != nil{
+                        let carta = value?["Carta"] as! [String: [String: AnyObject]]
+                        
+                        carta.forEach({ (key, value) in
+                            print(value)
+                            let namePlato = value["Name"]
+                            let urlPlato = value["imagen"]
+                            let precio = value["precio"]
+                            let UrlPlato = URL(string: urlPlato as! String)
+                            if let data = try? Data(contentsOf: UrlPlato!) {
+                                let imagenPlato: UIImage = (UIImage(data: data) ?? nil)!
+                                self.platosCarta.append(Plato(nombre: namePlato as! String, precio: precio as! Int, imagen: imagenPlato))
+                            }
+                        })
+                        
+                            /*let namePlato = carta["Name"]
+                            let urlPlato = platos["imagen"]
+                            let precio = platos["precio"]
+                            let UrlPlato = URL(string: urlPlato as! String)
+                            if let data = try? Data(contentsOf: UrlPlato!) {
+                                let imagenPlato: UIImage = (UIImage(data: data) ?? nil)!
+                                self.platosCarta.append(Plato(nombre: namePlato as! String, precio: precio as! Int, imagen: imagenPlato))
+                            }*/
+                        
+                    }
+                    
+                    print(self.platosCarta)
+//                    guard let namePlato = plato["name"] else { return }
+                    
+                    
                     if let data = try? Data(contentsOf: Url!) {
                         let imagen: UIImage = (UIImage(data: data) ?? nil)!
                         self.postDataRef.append(Restaurante(name: name as! String, image: imagen, location: location as! String))
                     }
+                    
                 }
             self.tableView.reloadData()
         })
