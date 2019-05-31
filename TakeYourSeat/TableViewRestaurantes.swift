@@ -30,7 +30,7 @@ class TableViewRestaurantes : UIViewController, UITableViewDataSource, UITableVi
         
         //myCell.restName.text = restComerAqui[indexPath.row].name
         myCell.restName.text = postDataRef[indexPath.row].name
-        //myCell.restImg.image = postDataRef[indexPath.row].image
+        myCell.restImg.image = postDataRef[indexPath.row].image
         myCell.restLoc.text = postDataRef[indexPath.row].location
         //let URL = URL(postDataRef[indexPath.row])
         //myCell.restImg.image =
@@ -69,7 +69,7 @@ class TableViewRestaurantes : UIViewController, UITableViewDataSource, UITableVi
         }*/
 
         getDatabaseData()
-        
+        self.tableView.reloadData()
        
         /*ref.child("restaurants").child("Can Stucom").observeSingleEvent(of: .value, with: { (snapshot) in
                 // Get user value
@@ -104,9 +104,6 @@ class TableViewRestaurantes : UIViewController, UITableViewDataSource, UITableVi
                     let name = value?["Name"]
                     let url = value?["image"]
                     let location = value?["location"]
-                    print(name)
-                    print(location)
-                    print(url)
                     let Url = URL(string: url as! String)
                     if let data = try? Data(contentsOf: Url!) {
                         let imagen: UIImage = (UIImage(data: data) ?? nil)!
@@ -115,9 +112,11 @@ class TableViewRestaurantes : UIViewController, UITableViewDataSource, UITableVi
                     }
                     //let imagen = UIImage(named: "100")
                     //self.postDataRef.append(Restaurante(name: name as! String, image: imagen!, location: location as! String))
+                    
                 }
             self.tableView.reloadData()
         })
+        
     }
     
     
