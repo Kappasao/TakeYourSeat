@@ -15,13 +15,10 @@ class Decision: UIViewController{
     
     @IBOutlet weak var imageQr: UIImageView!
     var pedido = String()
-    
-    let pedidu = pedidoPlatos
- 
     override func viewDidLoad() {
         
-        for i in 0..<pedidu.count{
-            pedido = pedido + pedidu[i] + ", "
+        for i in 0..<pedidoPlatos.count{
+            pedido = pedido + pedidoPlatos[i] + ", "
         }
         
         if takeaway == true {

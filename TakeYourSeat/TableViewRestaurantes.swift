@@ -12,17 +12,21 @@ import FirebaseDatabase
 
 var restauranteGuardado:Int = Int()
 
-class TableViewRestaurantes : UIViewController, UITableViewDataSource, UITableViewDelegate{
+class TableViewRestaurantes : UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate{
     
+    var buscando:Bool = false
     var ref: DatabaseReference!
+    var filteredDataRef = [Restaurante]()
     var postDataRef = [Restaurante]()
     var databaseHandle: DatabaseHandle?
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //return restComerAqui.count
-        return postDataRef.count
+        //return postDataRef.count
+        return buscando ? filteredDataRef.count : postDataRef.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -53,11 +57,18 @@ class TableViewRestaurantes : UIViewController, UITableViewDataSource, UITableVi
         return 150
     }
     
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        filteredDataRef = postDataRef.filter({$0.name.lowercased().contains(searchText.lowercased())})
+        buscando = searchText != "" ? true : false
+        tableView.reloadData()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        
+        searchBar.delegate = self
+        searchBar.placeholder = "Buscar restaurantes.."
         ref = Database.database().reference()
         /*databaseHandle = ref.child("restaurants").child("Can Stucom").observe(.childAdded) {
             (snapshot) in
