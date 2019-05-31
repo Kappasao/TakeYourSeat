@@ -11,17 +11,32 @@ import UIKit
 
 class Restaurante {
     
-    var name:String = String()
+    var name:String = ""
     var image:UIImage = UIImage()
-    var location:String = String()
-    var menu:Carta
+    var location:String = ""
+    var menu:Carta = Carta(platos: [Plato(nombre: "", procedencia: "", precio: 0, imagen: UIImage())])
     
-    init(name:String, image:UIImage, location:String, menu:Carta) {
+    init() {
+
+    }
+    
+    convenience init(name:String, image:UIImage, location:String, menu:Carta) {
+        self.init()
         self.name = name
         self.image = image
         self.location = location
         self.menu = menu
     }
+    
+    convenience init(name:String, image:UIImage, location:String) {
+        self.init()
+        self.name = name
+        self.image = image
+        self.location = location
+    }
+    
+    
+    
     
     func getNumPlatos(menu:Carta) -> Int{
         return menu.platos.count
