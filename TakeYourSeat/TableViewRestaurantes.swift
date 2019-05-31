@@ -67,6 +67,8 @@ class TableViewRestaurantes : UIViewController, UITableViewDataSource, UITableVi
                 print(name)
             }
         }*/
+        
+        
         /*
          _commentsRef.observe(.value) { snapshot in
          for child in snapshot.children {
@@ -74,6 +76,12 @@ class TableViewRestaurantes : UIViewController, UITableViewDataSource, UITableVi
          }
          }
          */
+        
+        ref.observe(.value) { (snapshot) in
+            for child in snapshot.children{
+                
+            }
+        }
         
         ref.child("restaurants").child("Can Stucom").observeSingleEvent(of: .value, with: { (snapshot) in
                 // Get user value
