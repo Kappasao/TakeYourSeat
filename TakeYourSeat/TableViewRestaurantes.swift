@@ -24,22 +24,22 @@ class TableViewRestaurantes : UIViewController, UITableViewDataSource, UITableVi
     @IBOutlet weak var searchBar: UISearchBar!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //return restComerAqui.count
-        //return postDataRef.count
         return buscando ? filteredDataRef.count : postDataRef.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let myCell = tableView.dequeueReusableCell(withIdentifier: "myCell") as! RestaurantCell
         
-        //myCell.restName.text = restComerAqui[indexPath.row].name
-        myCell.restName.text = postDataRef[indexPath.row].name
-        myCell.restImg.image = postDataRef[indexPath.row].image
-        myCell.restLoc.text = postDataRef[indexPath.row].location
-        //let URL = URL(postDataRef[indexPath.row])
-        //myCell.restImg.image =
-        //myCell.restImg.image = restComerAqui[indexPath.row].image
-        //myCell.restLoc.text = restComerAqui[indexPath.row].location
+        if buscando {
+            myCell.restName.text = filteredDataRef[indexPath.row].name
+            myCell.restImg.image = filteredDataRef[indexPath.row].image
+            myCell.restLoc.text = filteredDataRef[indexPath.row].location
+        }
+        else{
+            myCell.restName.text = postDataRef[indexPath.row].name
+            myCell.restImg.image = postDataRef[indexPath.row].image
+            myCell.restLoc.text = postDataRef[indexPath.row].location
+        }
         
         return myCell
     }
@@ -60,6 +60,7 @@ class TableViewRestaurantes : UIViewController, UITableViewDataSource, UITableVi
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         filteredDataRef = postDataRef.filter({$0.name.lowercased().contains(searchText.lowercased())})
         buscando = searchText != "" ? true : false
+        
         tableView.reloadData()
     }
     
@@ -70,39 +71,9 @@ class TableViewRestaurantes : UIViewController, UITableViewDataSource, UITableVi
         searchBar.delegate = self
         searchBar.placeholder = "Buscar restaurantes.."
         ref = Database.database().reference()
-        /*databaseHandle = ref.child("restaurants").child("Can Stucom").observe(.childAdded) {
-            (snapshot) in
-            if let crudOne = snapshot.value as? NSDictionary{
-                let name = crudOne["Name"] as! String
-                self.postDataRef.append(name)
-                print(name)
-            }
-        }*/
-
         getDatabaseData()
         self.tableView.reloadData()
-       
-        /*ref.child("restaurants").child("Can Stucom").observeSingleEvent(of: .value, with: { (snapshot) in
-                // Get user value
-            
-            
-                let value = snapshot.value as? NSDictionary
-                let name = value?["Name"] as? String ?? ""
-                let url = value?["image"] as? String ?? ""
-                let location = value?["location"] as? String ?? ""
-                //let carta = value?["carta"] as? String ?? ""
-                let Url = URL(string: url)
-                if let data = try? Data(contentsOf: Url!) {
-                    let imagen: UIImage = (UIImage(data: data) ?? nil)!
-                    self.postDataRef.append(Restaurante(name: name, image: imagen, location: location))
-                }
-            
-                self.tableView.reloadData()
-            }) { (error) in
-                print(error.localizedDescription)
-        }
-        self.tableView.reloadData()
-        */
+        
     }
     
     func getDatabaseData(){
@@ -118,12 +89,8 @@ class TableViewRestaurantes : UIViewController, UITableViewDataSource, UITableVi
                     let Url = URL(string: url as! String)
                     if let data = try? Data(contentsOf: Url!) {
                         let imagen: UIImage = (UIImage(data: data) ?? nil)!
-                        //self.postDataRef.append(Restaurante(name: name!, image: imagen, location: location!))
                         self.postDataRef.append(Restaurante(name: name as! String, image: imagen, location: location as! String))
                     }
-                    //let imagen = UIImage(named: "100")
-                    //self.postDataRef.append(Restaurante(name: name as! String, image: imagen!, location: location as! String))
-                    
                 }
             self.tableView.reloadData()
         })

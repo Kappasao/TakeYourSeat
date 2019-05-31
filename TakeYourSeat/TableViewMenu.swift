@@ -34,6 +34,9 @@ class TableViewMenu : UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        tableView.allowsSelection = false
+        
         let myCell = tableView.dequeueReusableCell(withIdentifier: "myCell") as! MenuCell
         let precio = carta.platos[indexPath.row].precio
         let strPrecio = "\(precio) €"
