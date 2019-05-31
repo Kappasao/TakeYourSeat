@@ -14,7 +14,7 @@ class Restaurante {
     var name:String = ""
     var image:UIImage = UIImage()
     var location:String = ""
-    var menu:Carta = Carta(platos: [Plato(nombre: "", procedencia: "", precio: 0, imagen: UIImage())])
+    var menu:Carta = Carta(platos: [Plato(nombre: "", precio: 0, imagen: UIImage())])
     
     init() {
 

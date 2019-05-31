@@ -17,6 +17,8 @@ class Decision: UIViewController{
     var pedido = String()
     override func viewDidLoad() {
         
+        pedido = nombreRestaurante + ": "
+        
         for i in 0..<pedidoPlatos.count{
             pedido = pedido + pedidoPlatos[i] + ", "
         }

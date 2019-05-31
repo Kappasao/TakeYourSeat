@@ -12,13 +12,11 @@ import UIKit
 class Plato{
     
     var nombre = String()
-    var procedencia = String()
     var precio = Int()
     var imagen = UIImage()
     
-    init(nombre:String, procedencia:String, precio:Int, imagen:UIImage) {
+    init(nombre:String, precio:Int, imagen:UIImage) {
         self.nombre = nombre
-        self.procedencia = procedencia
         self.precio = precio
         self.imagen = imagen
     }

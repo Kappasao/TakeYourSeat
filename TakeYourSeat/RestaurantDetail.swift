@@ -10,6 +10,8 @@ import UIKit
 import FirebaseAuth
 import GoogleSignIn
 
+var nombreRestaurante = String()
+
 class RestaurantDetail: UIViewController {
 
     @IBOutlet weak var restName: UILabel!
@@ -25,6 +27,9 @@ class RestaurantDetail: UIViewController {
         restName.text = nombre
         restImg.image = img
         restDesc.text = desc
+        
+        
+        nombreRestaurante = nombre
         // Do any additional setup after loading the view.
     }
     
