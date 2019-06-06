@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-var carta:Carta = Carta(platos: [])
+var carta = Carta(platos: [])
 var precioTotal:Int = 0
 var comptador = Int()
 var pedidoPlatos: [String] = []
@@ -27,7 +27,8 @@ class TableViewMenu : UIViewController, UITableViewDataSource, UITableViewDelega
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        carta = restComerAqui[restauranteGuardado].menu
+        
+        carta = postDataRef[restauranteGuardado].menu
         let numPlatos:Int = carta.platos.count 
         return numPlatos
         

@@ -11,14 +11,14 @@ import UIKit
 import FirebaseDatabase
 
 var restauranteGuardado:Int = Int()
+var postDataRef = [Restaurante]()
 
 class TableViewRestaurantes : UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate{
     
     var buscando:Bool = false
     var ref: DatabaseReference!
     var filteredDataRef = [Restaurante]()
-    var postDataRef = [Restaurante]()
-    var platosCarta = [Plato]()
+    var platosCarta = Carta(platos: [])
     var databaseHandle: DatabaseHandle?
     
     @IBOutlet weak var tableView: UITableView!
@@ -101,7 +101,8 @@ class TableViewRestaurantes : UIViewController, UITableViewDataSource, UITableVi
                             let UrlPlato = URL(string: urlPlato as! String)
                             if let data = try? Data(contentsOf: UrlPlato!) {
                                 let imagenPlato: UIImage = (UIImage(data: data) ?? nil)!
-                                self.platosCarta.append(Plato(nombre: namePlato as! String, precio: precio as! Int, imagen: imagenPlato))
+                                //self.platosCarta.append(Plato(nombre: namePlato as! String, precio: precio as! Int, imagen: imagenPlato))
+                                self.platosCarta.platos.append(Plato(nombre: namePlato as! String, precio: precio as! Int, imagen: imagenPlato))
                             }
                         })
                         
@@ -122,7 +123,8 @@ class TableViewRestaurantes : UIViewController, UITableViewDataSource, UITableVi
                     
                     if let data = try? Data(contentsOf: Url!) {
                         let imagen: UIImage = (UIImage(data: data) ?? nil)!
-                        self.postDataRef.append(Restaurante(name: name as! String, image: imagen, location: location as! String))
+                        //postDataRef.append(Restaurante(name: name as! String, image: imagen, location: location as! String, menu: Carta[platosCarta]))
+                        postDataRef.append(Restaurante(name: name as! String, image: imagen, location: location as!String, menu: self.platosCarta))
                     }
                     
                 }

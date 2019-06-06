@@ -34,7 +34,7 @@ class MenuCell: UITableViewCell {
     @IBAction func añadirUnidad(_ sender: UIButton) {
         number = nombrePlato.tag
         //No añade bien el nombre
-        carta = restComerAqui[restauranteGuardado].menu
+        carta = postDataRef[restauranteGuardado].menu
         let plato = carta.platos[number].nombre
         let preu = carta.platos[number].precio
         let num = Int(numUnidades.text!)
@@ -51,7 +51,7 @@ class MenuCell: UITableViewCell {
         
         NotificationCenter.default.addObserver(self, selector: #selector(self.counter), name: Notification.Name(rawValue: "Number"), object: number)
         
-        carta = restComerAqui[restauranteGuardado].menu
+        carta = postDataRef[restauranteGuardado].menu
         let plato = carta.platos[number].nombre
         let preu = carta.platos[number].precio
         let num = Int(numUnidades.text!)
