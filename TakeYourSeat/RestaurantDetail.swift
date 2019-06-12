@@ -33,19 +33,6 @@ class RestaurantDetail: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func signOutPressed(_ sender: Any) {
-        GIDSignIn.sharedInstance().signOut()
-        let firebaseAuth = Auth.auth()
-        do {
-            try firebaseAuth.signOut()
-            name = ""
-            let vc = storyboard?.instantiateViewController(withIdentifier: "start")
-            let appDelegate = UIApplication.shared.delegate as! AppDelegate
-            appDelegate.window?.rootViewController = vc
-            
-        } catch let signOutError as NSError {
-            print ("Error signing out: %@", signOutError)
-        }
-    }
+    
 
 }

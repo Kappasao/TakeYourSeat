@@ -9,18 +9,26 @@
 import Foundation
 import UIKit
 
-var numCom = 0
+var numCom:Int = 0
 
 class NumComensales: UIViewController {
     
-    @IBOutlet weak var comensales: UITextField!
     
-    @IBAction func confirm(_ sender: UIButton) {
+    @IBOutlet weak var numComensales: UITextField!
+    
+    
+    @IBAction func comprobar(_ sender: Any) {
+        if numComensales.text == "" {
+            let alert = UIAlertController(title: "Campo vacío", message: "Porfavor, indica el número de personas que van a comer en el restaurante.", preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        comensales.text = "0"
     }
     
 }

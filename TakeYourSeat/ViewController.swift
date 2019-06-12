@@ -11,30 +11,18 @@ import FirebaseDatabase
 import GoogleSignIn
 import FirebaseAuth
 
-var cartaItaliano: Carta = Carta(platos: [bolo, pesto, queso, queso1, queso2])
-var cartaFastFood: Carta = Carta(platos: [burger, fries, frankfurt])
+
 //Opcion seleccionada dependiendo del boton al que le damos
-
 var ref: DatabaseReference!
-
 //Opciones estaticas de momento para recoger si es para comer aqui o no
 var opciones = ["Aqui","Para llevar"]
-var restComerAqui:[Restaurante] = [Restaurante(name: "Comer aqui 1", image: UIImage(named: "rest1")!, location: "C/ sepulveda 65", menu: cartaItaliano),
-                                   Restaurante(name: "Comer aqui 2", image: UIImage(named: "rest2")!, location: "C/ comte borrell 37", menu: cartaFastFood),
-                                   Restaurante(name: "Comer aqui 3", image: UIImage(named: "rest3")!, location: "C/ muntaner 1", menu: cartaItaliano),
-                                   Restaurante(name: "Llevar 1", image: UIImage(named: "rest4")!, location: "C/ urgell 201", menu: cartaFastFood),
-                                   Restaurante(name: "Llevar 2", image: UIImage(named: "rest5")!, location: "C/ pelai 81", menu: cartaItaliano),
-                                   Restaurante(name: "Llevar 3", image: UIImage(named: "rest6")!, location: "C/ còrsega 109", menu: cartaFastFood)
-]
-
-
-
 class ViewController: UIViewController, GIDSignInUIDelegate {
     //Aqui empezamos
     
     
     
     
+    @IBOutlet weak var takeYourSeat: UIButton!
     @IBOutlet weak var signInButton: GIDSignInButton!
     
     func sign(_ signIn: GIDSignIn!, present viewController: UIViewController!) {
@@ -73,12 +61,22 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
         super.viewDidLoad()
         GIDSignIn.sharedInstance().uiDelegate = self
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.comprovation), name: Notification.Name("ToogleAuthUINotification"), object: nil)
-        
+        name = Auth.auth().currentUser?.displayName ?? ""
+        takeYourSeat.isHidden = true
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
         comprovation()
+        print(name)
+        if name == ""{
+            takeYourSeat.isHidden = true
+            signInButton.isHidden = false
+        }
+        else{
+            signInButton.isHidden = true
+            takeYourSeat.isHidden = false
+        }
     }
     
     override func reloadInputViews() {

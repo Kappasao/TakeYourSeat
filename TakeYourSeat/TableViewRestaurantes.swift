@@ -9,9 +9,12 @@
 import Foundation
 import UIKit
 import FirebaseDatabase
+import FirebaseAuth
+import GoogleSignIn
 
 var restauranteGuardado:Int = Int()
 var postDataRef = [Restaurante]()
+
 
 class TableViewRestaurantes : UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate{
     
@@ -65,6 +68,21 @@ class TableViewRestaurantes : UIViewController, UITableViewDataSource, UITableVi
         tableView.reloadData()
     }
     
+    @IBAction func signOutPressed(_ sender: UIButton) {
+        GIDSignIn.sharedInstance().signOut()
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+            name = ""
+            let vc = storyboard?.instantiateViewController(withIdentifier: "start")
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            appDelegate.window?.rootViewController = vc
+            
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
@@ -78,6 +96,11 @@ class TableViewRestaurantes : UIViewController, UITableViewDataSource, UITableVi
     }
     
     func getDatabaseData(){
+        
+        if !postDataRef.isEmpty{
+            postDataRef.removeAll()
+        }
+        
         let idRef = self.ref.child("restaurants")
         idRef.observe(DataEventType.value, with: {
             (snapshot) in
@@ -130,8 +153,6 @@ class TableViewRestaurantes : UIViewController, UITableViewDataSource, UITableVi
                 }
             self.tableView.reloadData()
         })
-        
     }
-    
     
 }
