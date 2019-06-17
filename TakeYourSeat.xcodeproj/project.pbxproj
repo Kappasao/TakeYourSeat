@@ -12,6 +12,8 @@
 		5B043C2F22452B4700FDD0D3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B043C2E22452B4700FDD0D3 /* GoogleService-Info.plist */; };
 		5B043C3122453B1B00FDD0D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B043C3022453B1B00FDD0D3 /* Main.storyboard */; };
 		5B043C33224543AB00FDD0D3 /* Selection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B043C32224543AB00FDD0D3 /* Selection.swift */; };
+		5B2D68FA22B8035100391C11 /* EscogeAsientos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2D68F922B8035100391C11 /* EscogeAsientos.swift */; };
+		5B2D68FE22B8055E00391C11 /* Checkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2D68FD22B8055E00391C11 /* Checkout.swift */; };
 		5B82B959222867F200171078 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82B958222867F200171078 /* AppDelegate.swift */; };
 		5B82B95B222867F200171078 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82B95A222867F200171078 /* ViewController.swift */; };
 		5B82B960222867F400171078 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B82B95F222867F400171078 /* Assets.xcassets */; };
@@ -54,6 +56,8 @@
 		5B043C2E22452B4700FDD0D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5B043C3022453B1B00FDD0D3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		5B043C32224543AB00FDD0D3 /* Selection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selection.swift; sourceTree = "<group>"; };
+		5B2D68F922B8035100391C11 /* EscogeAsientos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscogeAsientos.swift; sourceTree = "<group>"; };
+		5B2D68FD22B8055E00391C11 /* Checkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkout.swift; sourceTree = "<group>"; };
 		5B82B955222867F200171078 /* TakeYourSeat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeYourSeat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B82B958222867F200171078 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B82B95A222867F200171078 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -211,6 +215,8 @@
 				817A3B83228EF9B700C1F971 /* NumComensales.swift */,
 				5B82B961222867F400171078 /* LaunchScreen.storyboard */,
 				5B043C32224543AB00FDD0D3 /* Selection.swift */,
+				5B2D68F922B8035100391C11 /* EscogeAsientos.swift */,
+				5B2D68FD22B8055E00391C11 /* Checkout.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -505,6 +511,8 @@
 				814910FD2245402E007BBC4D /* TableViewRestaurantes.swift in Sources */,
 				817A3B84228EF9B700C1F971 /* NumComensales.swift in Sources */,
 				810C2241224E65EE00DB5B16 /* Carta.swift in Sources */,
+				5B2D68FA22B8035100391C11 /* EscogeAsientos.swift in Sources */,
+				5B2D68FE22B8055E00391C11 /* Checkout.swift in Sources */,
 				810C223D224E63F700DB5B16 /* Plato.swift in Sources */,
 				5B82B959222867F200171078 /* AppDelegate.swift in Sources */,
 			);

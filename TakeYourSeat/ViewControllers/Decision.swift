@@ -29,6 +29,12 @@ class Decision: UIViewController{
             pedido = pedido + "Para comer aqui."
         }
         
+        if online{
+            pedido = pedido + " Pagamiento realizado"
+        } else{
+            pedido = pedido + " Pagamiento a realizar en el restaurante"
+        }
+        
         let data = pedido.data(using: String.Encoding.ascii)
         
         guard let qrFilter = CIFilter(name: "CIQRCodeGenerator") else { return }

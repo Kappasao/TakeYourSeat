@@ -19,7 +19,12 @@ class TableViewMenu : UIViewController, UITableViewDataSource, UITableViewDelega
     
     @IBAction func Pedido(_ sender: UIButton) {
         NotificationCenter.default.addObserver(self, selector: #selector(TableViewMenu.updatePedido), name: Notification.Name(rawValue: "NombrePlatos"), object: comptador)
-        print(pedidoPlatos)
+        if (pedidoPlatos.isEmpty){
+            let alert = UIAlertController(title: "No has pedido nada!", message: "Recuerda añadir todas las unidades que desees de los platos que te apetezcan!", preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }        
     }
     
     @IBOutlet weak var tableView: UITableView!
@@ -27,11 +32,9 @@ class TableViewMenu : UIViewController, UITableViewDataSource, UITableViewDelega
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         carta = postDataRef[restauranteGuardado].menu
         let numPlatos:Int = carta.platos.count 
         return numPlatos
-        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -53,11 +56,6 @@ class TableViewMenu : UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 130
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        
-        
     }
     
     override func viewDidLoad() {
