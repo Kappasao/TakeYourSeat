@@ -161,24 +161,12 @@
 		5B82B957222867F200171078 /* TakeYourSeat */ = {
 			isa = PBXGroup;
 			children = (
+				8107BD2B22B7B98900AC4E7D /* ViewControllers */,
+				8107BD2922B7B97300AC4E7D /* Model */,
 				5B043C2E22452B4700FDD0D3 /* GoogleService-Info.plist */,
 				5B82B958222867F200171078 /* AppDelegate.swift */,
-				5B82B95A222867F200171078 /* ViewController.swift */,
-				5B043C3022453B1B00FDD0D3 /* Main.storyboard */,
-				5BE41A49229C1F7100983426 /* Decision.swift */,
-				5B043C32224543AB00FDD0D3 /* Selection.swift */,
 				5B82B95F222867F400171078 /* Assets.xcassets */,
-				5B82B961222867F400171078 /* LaunchScreen.storyboard */,
 				5B82B964222867F400171078 /* Info.plist */,
-				815A6037222995120007300B /* RestaurantCell.swift */,
-				815A6039222995DA0007300B /* Restaurante.swift */,
-				815A603B222999F80007300B /* RestaurantDetail.swift */,
-				814910FC2245402E007BBC4D /* TableViewRestaurantes.swift */,
-				810C223C224E63F700DB5B16 /* Plato.swift */,
-				810C2240224E65EE00DB5B16 /* Carta.swift */,
-				810C2244224E6A7700DB5B16 /* TableViewMenu.swift */,
-				810C2246224E6D0200DB5B16 /* MenuCell.swift */,
-				817A3B83228EF9B700C1F971 /* NumComensales.swift */,
 			);
 			path = TakeYourSeat;
 			sourceTree = "<group>";
@@ -199,6 +187,50 @@
 				5B82B97A222867F400171078 /* Info.plist */,
 			);
 			path = TakeYourSeatUITests;
+			sourceTree = "<group>";
+		};
+		8107BD2922B7B97300AC4E7D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				815A603B222999F80007300B /* RestaurantDetail.swift */,
+				815A6039222995DA0007300B /* Restaurante.swift */,
+				810C223C224E63F700DB5B16 /* Plato.swift */,
+				810C2240224E65EE00DB5B16 /* Carta.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8107BD2B22B7B98900AC4E7D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8107BD2D22B7B9F400AC4E7D /* Cells */,
+				8107BD2C22B7B9DE00AC4E7D /* TableViews */,
+				5B82B95A222867F200171078 /* ViewController.swift */,
+				5B043C3022453B1B00FDD0D3 /* Main.storyboard */,
+				5BE41A49229C1F7100983426 /* Decision.swift */,
+				817A3B83228EF9B700C1F971 /* NumComensales.swift */,
+				5B82B961222867F400171078 /* LaunchScreen.storyboard */,
+				5B043C32224543AB00FDD0D3 /* Selection.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8107BD2C22B7B9DE00AC4E7D /* TableViews */ = {
+			isa = PBXGroup;
+			children = (
+				810C2244224E6A7700DB5B16 /* TableViewMenu.swift */,
+				814910FC2245402E007BBC4D /* TableViewRestaurantes.swift */,
+			);
+			path = TableViews;
+			sourceTree = "<group>";
+		};
+		8107BD2D22B7B9F400AC4E7D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				810C2246224E6D0200DB5B16 /* MenuCell.swift */,
+				815A6037222995120007300B /* RestaurantCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -28,8 +28,25 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
     func sign(_ signIn: GIDSignIn!, present viewController: UIViewController!) {
             comprovation()
             print("log")
+        
     }
     
+    @IBAction func loggedUser(_ sender: Any) {
+        if name != ""{
+            let vc = storyboard?.instantiateViewController(withIdentifier: "asd")
+            //self.present(vc, animated: true)
+            self.navigationController?.pushViewController(vc!, animated: false)
+        }
+        
+        else{
+            let alert = UIAlertController(title: "Login necesario", message: "Necesitamos que te loguees para disfrutar de la aplicación", preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            
+            self.present(alert, animated: true)
+        }
+        
+    }
     
     /*func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!,
                 withError error: Error!) {
@@ -62,25 +79,13 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
         GIDSignIn.sharedInstance().uiDelegate = self
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.comprovation), name: Notification.Name("ToogleAuthUINotification"), object: nil)
         name = Auth.auth().currentUser?.displayName ?? ""
-        takeYourSeat.isHidden = true
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
         comprovation()
         print(name)
-        if name == ""{
-            takeYourSeat.isHidden = true
-            signInButton.isHidden = false
-        }
-        else{
-            signInButton.isHidden = true
-            takeYourSeat.isHidden = false
-        }
-    }
-    
-    override func reloadInputViews() {
-        comprovation()
+
     }
     
     @objc func comprovation(){

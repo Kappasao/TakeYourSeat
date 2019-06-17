@@ -28,7 +28,6 @@ class RestaurantDetail: UIViewController {
         restImg.image = img
         restDesc.text = desc
         
-        carta.platos.removeAll()
         nombreRestaurante = nombre
         // Do any additional setup after loading the view.
     }

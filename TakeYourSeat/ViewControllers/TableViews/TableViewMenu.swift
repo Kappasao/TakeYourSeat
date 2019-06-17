@@ -75,7 +75,7 @@ class TableViewMenu : UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     @objc func updatePedido(){
-        let platiku = restComerAqui[comptador].name
+        let platiku = carta.platos[comptador].nombre
         pedidoPlatos.append(platiku)
         print(pedidoPlatos)
         

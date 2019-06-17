@@ -26,6 +26,7 @@ class Selection: UIViewController{
     
     override func viewDidAppear(_ animated: Bool) {
         pedidoPlatos.removeAll()
+        
     }
     
 }
