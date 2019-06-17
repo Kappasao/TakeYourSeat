@@ -37,7 +37,7 @@ class NumComensales: UIViewController {
                 
                 alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
                 self.present(alert, animated: true)
-            }            
+            }
         }
         
     }
@@ -45,6 +45,7 @@ class NumComensales: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        numComensales.placeholder = "Número de clientes entre 1 y 10"
     }
     
 }
