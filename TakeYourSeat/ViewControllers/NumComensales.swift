@@ -45,7 +45,7 @@ class NumComensales: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        numComensales.placeholder = "Número de clientes entre 1 y 10"
+        numComensales.placeholder = "Número de clientes"
     }
     
 }

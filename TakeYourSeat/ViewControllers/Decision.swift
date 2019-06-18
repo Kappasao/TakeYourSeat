@@ -26,13 +26,13 @@ class Decision: UIViewController{
         if takeaway == true {
             pedido = pedido + "Para llevar."
         } else{
-            pedido = pedido + "Para comer aqui."
+            pedido = pedido + "Para comer en restaurante."
         }
         
         if online{
-            pedido = pedido + " Pagamiento realizado"
+            pedido = pedido + " Pago realizado"
         } else{
-            pedido = pedido + " Pagamiento a realizar en el restaurante"
+            pedido = pedido + " Pago a realizar en el restaurante"
         }
         
         let data = pedido.data(using: String.Encoding.ascii)

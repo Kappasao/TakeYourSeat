@@ -19,9 +19,9 @@ class Checkout: UIViewController{
     override func viewDidLoad() {
         if precioTotal > 0{
             let preu = String(precioTotal)
-            totalPrice.text = "precio: \(preu)€"
+            totalPrice.text = "Precio total: \(preu)€"
         } else{
-            totalPrice.text = "vaya.. parece que no has pedido nada."
+            totalPrice.text = "Vaya.. parece que no has pedido nada."
         }
     }
     
